@@ -24,7 +24,7 @@ export default function Contact() {
         
         {/* Massive CTA Section */}
         <div className="flex flex-col items-center gap-10 text-center w-full">
-          <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter text-primary">
+          <h2 className="font-sans text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter text-primary">
             READY TO BUILD SOMETHING <br />
             <span className="text-transparent bg-clip-text bg-gradient-accent">EXTRAORDINARY?</span>
           </h2>

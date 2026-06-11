@@ -20,7 +20,7 @@ export default function Projects() {
     <section id="projects" className="w-full bg-black py-24 px-4 border-t border-neutral-900">
       <div className="max-w-7xl mx-auto flex flex-col gap-16 relative">
         <div className="flex flex-col gap-4">
-          <h2 className="font-display text-5xl md:text-7xl font-black tracking-tighter text-primary uppercase">
+          <h2 className="font-sans text-5xl md:text-7xl font-black tracking-tighter text-primary uppercase">
             SELECTED PROJECTS
           </h2>
           <div className="w-24 h-1 bg-gradient-accent rounded-full"></div>
@@ -42,7 +42,7 @@ export default function Projects() {
                       {project.index} <span className="mx-2">/</span> {project.category}
                     </span>
                   </div>
-                  <h3 className="font-display text-3xl md:text-5xl font-bold tracking-tight text-primary leading-tight">
+                  <h3 className="font-sans text-3xl md:text-5xl font-bold tracking-tight text-primary leading-tight">
                     {project.title}
                   </h3>
                   <p className="text-neutral-400 font-sans text-base md:text-lg leading-relaxed mt-2">
@@ -63,7 +63,7 @@ export default function Projects() {
                 {/* Placeholder content for interface mockup */}
                 <div className="absolute inset-0 bg-gradient-to-br from-neutral-800 to-black opacity-50 group-hover:opacity-70 transition-opacity duration-500"></div>
                 <div className="relative z-10 flex flex-col items-center gap-2">
-                  <span className="text-neutral-700 font-display font-bold text-lg md:text-2xl tracking-widest text-center uppercase">
+                  <span className="text-neutral-700 font-sans font-bold text-lg md:text-2xl tracking-widest text-center uppercase">
                     INTERFACE MOCKUP
                   </span>
                   <span className="text-xs text-neutral-500 font-medium font-sans">

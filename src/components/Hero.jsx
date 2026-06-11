@@ -1,64 +1,110 @@
+import { useState, useEffect } from "react";
+
 export default function Hero() {
+  const [isScrolling, setIsScrolling] = useState(false);
+
+  useEffect(() => {
+    let scrollTimeout;
+
+    const handleScroll = () => {
+      setIsScrolling(true);
+      clearTimeout(scrollTimeout);
+      
+      scrollTimeout = setTimeout(() => {
+        setIsScrolling(false);
+      }, 150);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(scrollTimeout);
+    };
+  }, []);
+
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 pt-24 pb-12 relative overflow-hidden">
-      <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+    <section className="relative min-h-screen w-full flex flex-col justify-center px-6 md:px-16 pt-24 pb-12 overflow-hidden z-0">
+      
+      {/* Avatar Background Image - Fully Eclipsing the Screen */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <img 
+          src="/avatar_wide.png" 
+          alt="Harshal Pednekar Avatar" 
+          className="w-full h-full object-cover object-top opacity-100 brightness-[1.30] contrast-[1.10] saturate-[1.15]"
+        />
+      </div>
+
+      {/* Gradient Overlays for Text Readability */}
+      {/* Left side gradient to ensure typography is readable over the centered avatar */}
+      <div className="absolute inset-y-0 left-0 w-full md:w-[85%] z-10 bg-gradient-to-r from-black via-black/80 to-transparent pointer-events-none"></div>
+      
+      {/* Bottom gradient to blend smoothly into the next section */}
+      <div className="absolute inset-x-0 bottom-0 h-1/3 z-10 bg-gradient-to-t from-black via-black/40 to-transparent pointer-events-none"></div>
+
+      {/* Main Content Container */}
+      <div className="w-full max-w-7xl mx-auto flex flex-col items-start justify-center flex-1 relative z-20 pt-20 pointer-events-none">
         
-        {/* Left Side: Typography Grid */}
-        <div className="flex flex-col items-start gap-6">
-          <div className="inline-block px-3 py-1 border border-neutral-800 rounded-full bg-neutral-900/50 backdrop-blur-sm">
-            <span className="text-[10px] md:text-xs font-bold tracking-[0.2em] text-subtext uppercase">
-              PORTFOLIO · 2026
-            </span>
-          </div>
-
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tighter text-primary">
-            HARSHAL<br/>
-            <span className="text-transparent bg-clip-text bg-gradient-accent">PEDNEKAR</span>
-          </h1>
-
-          <div className="w-full max-w-lg border-l-2 border-neutral-900 pl-4 py-1 mt-4">
-            <p className="text-sm md:text-base font-sans font-medium tracking-wide text-subtext leading-relaxed">
-              AI & DATA SCIENCE STUDENT <span className="text-zinc-700 mx-2">·</span> MACHINE LEARNING DEVELOPER <span className="text-zinc-700 mx-2">·</span> GENAI ARCHITECT <span className="text-zinc-700 mx-2">·</span> DATA ANALYST
-            </p>
-          </div>
-
-          {/* Micro-Interaction: Scroll Indicator */}
-          <div className="mt-12 flex items-center gap-4 group">
-            <div className="relative w-[1px] h-16 bg-neutral-900 overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-accent animate-[scrollDown_2s_ease-in-out_infinite]"></div>
-            </div>
-            <span className="text-[10px] font-bold tracking-widest text-neutral-600 uppercase group-hover:text-subtext transition-colors duration-300">
-              Scroll
-            </span>
-          </div>
+        {/* Top Identifier */}
+        <div className="mb-4 flex items-center gap-4">
+          <span className="text-xs md:text-sm font-bold tracking-[0.3em] text-neutral-400 uppercase">
+            PORTFOLIO
+          </span>
         </div>
 
-        {/* Right Side: Visual Frame */}
-        <div className="relative w-full aspect-square lg:aspect-[4/5] flex items-center justify-center p-8">
-          <div className="absolute inset-0 bg-neutral-900/20 border border-neutral-900 rounded-[2rem] transform rotate-3 scale-95 transition-transform duration-500 hover:rotate-0 hover:scale-100"></div>
-          <div className="relative w-full h-full bg-black border border-zinc-800 rounded-[2rem] overflow-hidden flex items-center justify-center group shadow-2xl">
-            {/* Ambient Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-gradient-accent rounded-full blur-[100px] opacity-20 group-hover:opacity-40 transition-opacity duration-700"></div>
-            
-            {/* Placeholder Image/Avatar container */}
-            <div className="relative z-10 w-full h-full p-2">
-              <div className="w-full h-full rounded-[1.5rem] bg-neutral-950 border border-neutral-900 flex items-center justify-center overflow-hidden">
-                <span className="text-neutral-800 font-display font-bold text-xl tracking-widest text-center">
-                  AVATAR RENDER<br />
-                  <span className="text-xs font-sans font-medium tracking-normal mt-2 block">Upload custom asset here</span>
+        {/* Massive Name Typography - Adjusted font size to avoid overlapping face */}
+        <h1 className="font-sans text-5xl md:text-7xl lg:text-[5.5rem] font-black leading-[0.9] tracking-tight text-white uppercase drop-shadow-2xl max-w-2xl">
+          HARSHAL<br/>
+          PEDNEKAR
+        </h1>
+
+        {/* Subtitle Tags - Enchanting Stacked Layout */}
+        <div className="mt-8 flex flex-col items-start gap-3">
+          {[
+            "AI & DATA SCIENCE STUDENT",
+            "MACHINE LEARNING DEVELOPER",
+            "GENAI ARCHITECT",
+            "DATA ANALYST"
+          ].map((tag, index) => (
+            <div 
+              key={index}
+              style={{ animation: `fadeInUp 0.8s ease-out ${index * 0.15 + 0.3}s both` }}
+            >
+              <div 
+                className="group relative flex items-center gap-4 px-5 py-2.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md hover:bg-white/10 hover:border-white/20 transition-all duration-500 cursor-default"
+              >
+                {/* Glowing Indicator Dot */}
+                <div className="relative flex items-center justify-center">
+                  <div className="absolute w-4 h-4 rounded-full bg-gradient-accent opacity-0 group-hover:opacity-40 blur-sm transition-opacity duration-500 group-hover:animate-pulse"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-gradient-accent group-hover:scale-150 transition-transform duration-500"></div>
+                </div>
+                
+                <span className="text-xs md:text-sm font-sans font-bold tracking-[0.2em] text-neutral-300 uppercase group-hover:text-white transition-colors duration-300">
+                  {tag}
                 </span>
+
+                {/* Shimmer sweep effect on hover */}
+                <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none skew-x-12"></div>
               </div>
             </div>
+          ))}
+        </div>
+
+        {/* Dynamic Reactive Scroll Indicator Line */}
+        <div className="mt-16 flex items-end">
+          <div className="flex flex-col items-start" style={{ animation: `fadeInUp 0.8s ease-out 1.2s both` }}>
+            <div className="relative w-[1px] h-16 bg-gradient-to-b from-white/20 to-transparent overflow-hidden">
+              <div 
+                className={`absolute top-0 left-0 w-full h-1/3 bg-white shadow-[0_0_8px_#ffffff] transition-opacity duration-300 ${
+                  isScrolling ? 'opacity-100 animate-[scrollDown_1s_linear_infinite]' : 'opacity-0'
+                }`}
+              ></div>
+            </div>
           </div>
         </div>
 
       </div>
 
-      {/* Global Background Effects */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
-        <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full bg-indigo-900/10 blur-[120px]"></div>
-        <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] rounded-full bg-fuchsia-900/10 blur-[120px]"></div>
-      </div>
     </section>
   );
 }

@@ -2,16 +2,16 @@ import { Mail } from "lucide-react";
 
 export default function Navbar() {
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 flex justify-center mt-6 px-4">
-      <nav className="w-full max-w-6xl backdrop-blur-md bg-black/40 border border-neutral-900 rounded-2xl px-6 py-4 flex items-center justify-between transition-all duration-300 hover:border-zinc-800">
+    <div className="absolute top-0 left-0 right-0 z-50 flex justify-center mt-6 px-4">
+      <nav className="w-full max-w-6xl backdrop-blur-xl bg-white/5 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)] rounded-2xl px-6 py-4 flex items-center justify-between transition-all duration-500 hover:bg-white/10 hover:border-white/20">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-full bg-gradient-accent flex items-center justify-center font-display font-bold text-sm">
+          <a href="#" className="w-8 h-8 rounded-full bg-gradient-accent flex items-center justify-center font-sans font-bold text-sm text-white hover:scale-105 transition-transform duration-300">
             HP
-          </div>
+          </a>
         </div>
 
         <ul className="hidden md:flex items-center gap-8 text-sm tracking-wider font-semibold text-subtext">
-          {["ABOUT", "SERVICES", "PROJECTS", "CONTACT"].map((link) => (
+          {["ABOUT", "SKILLS", "PROJECTS", "CONTACT"].map((link) => (
             <li key={link}>
               <a
                 href={`#${link.toLowerCase()}`}

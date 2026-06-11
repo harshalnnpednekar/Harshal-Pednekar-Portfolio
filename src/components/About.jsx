@@ -1,19 +1,6 @@
-export default function About() {
-  const achievements = [
-    {
-      title: "3RD POSITION",
-      description: "Zerve AI Datathon 2025, Techfest, IIT Bombay.",
-    },
-    {
-      title: "FINALIST",
-      description: "PU Code Hackathon 3.0, Vadodara.",
-    },
-    {
-      title: "LEADERSHIP & COMPETITIONS",
-      description: "Selected Team Leader for the Invictus Hackathon; Active competitor in the Gemini 3 Hackathon and UIDAI Aadhar Hackathon.",
-    },
-  ];
+import React from "react";
 
+export default function About() {
   const skills = [
     {
       category: "CORE AI & MACHINE LEARNING",
@@ -38,64 +25,156 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="w-full bg-black py-24 px-4 border-t border-neutral-900 relative">
-      <div className="max-w-7xl mx-auto flex flex-col gap-24">
+    <section id="about" className="w-full bg-black py-32 px-4 border-t border-neutral-900 relative overflow-hidden">
+      
+      {/* Immersive Background Glow */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-fuchsia-900/10 rounded-full blur-[150px] pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-indigo-900/10 rounded-full blur-[150px] pointer-events-none"></div>
+
+      <div className="max-w-7xl mx-auto flex flex-col gap-32 relative z-10">
         
-        {/* About Me Segment */}
-        <div className="flex flex-col gap-8">
-          <h2 className="font-display text-5xl md:text-7xl font-black tracking-tighter text-primary uppercase">
-            ABOUT ME
-          </h2>
+        {/* Visual About Me Segment (Bento Grid) */}
+        <div className="flex flex-col gap-12">
           
-          <div className="max-w-3xl">
-            <p className="text-neutral-300 font-sans text-base md:text-lg leading-relaxed">
-              I am a B. Tech student in Artificial Intelligence & Data Science at VIVEKANAND EDUCATION SOCIETY'S INSTITIUTE OF TECHNOLOGY (CGPA: 9.63/10 (UPTO SEM 4)) specializing in the development of end-to-end Machine Learning pipelines, Generative AI architectures, and autonomous AI Agents. My technical expertise encompasses Deep Learning, Neural Networks, Natural Language Processing (NLP), and Computer Vision. Proven in competitive environments, I am a 1x Datathon Winner (3rd Position at the Zerve AI Datathon 2025, Techfest, IIT Bombay) and a 1x National Hackathon Finalist (PU Code Hackathon 3.0), focused on translating complex datasets and Large Language Models (LLMs) into scalable, deployment-ready intelligent systems.
-            </p>
+          {/* Header */}
+          <div className="flex flex-col gap-4" style={{ animation: 'fadeInUp 0.8s ease-out both' }}>
+            <div className="inline-flex items-center gap-4">
+              <div className="w-12 h-px bg-gradient-accent"></div>
+              <span className="text-transparent bg-clip-text bg-gradient-accent font-bold tracking-[0.2em] uppercase text-sm">
+                Introduction
+              </span>
+            </div>
+            <h2 className="font-sans text-5xl md:text-7xl font-black tracking-tighter text-primary uppercase leading-none drop-shadow-lg">
+              ABOUT ME
+            </h2>
           </div>
 
-          {/* Recognitions & Achievements Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-            {achievements.map((item, index) => (
-              <div 
-                key={index} 
-                className="p-6 border border-neutral-800 rounded-2xl bg-neutral-950/50 hover:bg-neutral-900/50 transition-colors duration-300 group"
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-2 h-2 rounded-full bg-gradient-accent"></div>
-                  <h3 className="text-xs font-bold tracking-widest text-primary uppercase">
-                    [{item.title}]
-                  </h3>
+          {/* Bento Grid Layout */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            {/* Education Block (Spans 2 columns) */}
+            <div className="md:col-span-2 group relative p-8 rounded-3xl border border-white/5 bg-white/5 backdrop-blur-md overflow-hidden hover:border-white/20 hover:-translate-y-2 transition-all duration-500 shadow-2xl cursor-default" style={{ animation: 'fadeInUp 0.8s ease-out 0.2s both' }}>
+              <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/5 to-transparent group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none skew-x-12"></div>
+              
+              <div className="relative z-10 flex flex-col justify-between h-full gap-6">
+                <h3 className="text-xs font-bold tracking-widest text-fuchsia-400 uppercase">Education & Academics</h3>
+                <div>
+                  <h4 className="text-2xl md:text-3xl font-bold text-white mb-2">B.Tech in Artificial Intelligence & Data Science</h4>
+                  <p className="text-lg text-neutral-400">Vivekanand Education Society's Institute of Technology (VESIT)</p>
                 </div>
-                <p className="text-sm text-neutral-400 group-hover:text-neutral-300 transition-colors duration-300">
-                  {item.description}
-                </p>
+                <div className="inline-flex items-center gap-4 px-5 py-3 bg-black/50 border border-white/10 rounded-2xl w-fit">
+                  <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-accent">9.63/10</span>
+                  <div className="w-px h-8 bg-white/10"></div>
+                  <span className="text-xs font-bold text-neutral-400 uppercase tracking-wider">CGPA<br/>(Till Sem 4)</span>
+                </div>
               </div>
-            ))}
+            </div>
+
+            {/* Mission Block */}
+            <div className="md:col-span-1 group relative p-8 rounded-3xl border border-white/5 bg-gradient-to-br from-indigo-900/20 to-black backdrop-blur-md overflow-hidden hover:border-indigo-500/30 hover:-translate-y-2 transition-all duration-500 shadow-2xl cursor-default flex flex-col justify-start" style={{ animation: 'fadeInUp 0.8s ease-out 0.3s both' }}>
+              <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+              <div className="relative z-10 h-full flex flex-col justify-between">
+                <div>
+                  <h3 className="text-xs font-bold tracking-widest text-indigo-400 uppercase mb-6">The Mission</h3>
+                  <h4 className="text-white font-bold text-base mb-2">Scalable Intelligence</h4>
+                  <p className="text-sm text-neutral-400 leading-relaxed">
+                    Focused on translating complex datasets and Large Language Models (LLMs) into scalable, deployment-ready intelligent systems.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Core Expertise Blocks */}
+            <div className="md:col-span-1 group relative p-8 rounded-3xl border border-white/5 bg-white/5 backdrop-blur-md overflow-hidden hover:border-white/20 hover:-translate-y-2 transition-all duration-500 shadow-2xl cursor-default" style={{ animation: 'fadeInUp 0.8s ease-out 0.4s both' }}>
+              <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+              <div className="relative z-10">
+                <h3 className="text-xs font-bold tracking-widest text-fuchsia-400 uppercase mb-6">Technical Domains</h3>
+                <div className="flex flex-col gap-4">
+                  {["Deep Learning", "Neural Networks", "Natural Language Processing (NLP)", "Computer Vision"].map((domain, i) => (
+                    <div key={i} className="flex items-center gap-3">
+                      <div className="w-1.5 h-1.5 rounded-full bg-gradient-accent"></div>
+                      <span className="text-sm font-medium text-neutral-300 group-hover:text-white transition-colors">{domain}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Architectures Block */}
+            <div className="md:col-span-2 group relative p-8 rounded-3xl border border-white/5 bg-white/5 backdrop-blur-md overflow-hidden hover:border-white/20 hover:-translate-y-2 transition-all duration-500 shadow-2xl cursor-default" style={{ animation: 'fadeInUp 0.8s ease-out 0.5s both' }}>
+              <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/5 to-transparent group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none skew-x-12"></div>
+              <div className="relative z-10 h-full flex flex-col justify-between">
+                <h3 className="text-xs font-bold tracking-widest text-indigo-400 uppercase mb-6">Architectural Specializations</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  {[
+                    { title: "End-to-End ML", desc: "Building robust machine learning pipelines." },
+                    { title: "Generative AI", desc: "Designing state-of-the-art GenAI architectures." },
+                    { title: "AI Agents", desc: "Developing autonomous, intelligent agents." }
+                  ].map((spec, i) => (
+                    <div key={i} className="p-5 rounded-2xl bg-black/40 border border-white/5 hover:border-white/10 transition-colors">
+                      <h4 className="text-white font-bold text-base mb-2">{spec.title}</h4>
+                      <p className="text-xs text-neutral-400 leading-relaxed">{spec.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Achievements Blocks */}
+            <div className="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6" style={{ animation: 'fadeInUp 0.8s ease-out 0.6s both' }}>
+              <div className="group relative p-6 md:p-8 rounded-3xl border border-white/5 bg-gradient-to-r from-neutral-900 to-black backdrop-blur-md overflow-hidden hover:border-fuchsia-500/30 hover:-translate-y-2 transition-all duration-500 shadow-2xl cursor-default">
+                <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
+                <div className="relative z-10 flex items-start gap-4 md:gap-6">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-fuchsia-500/10 border border-fuchsia-500/20 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-500">🏆</div>
+                  <div>
+                    <h4 className="text-xl font-bold text-white mb-2 group-hover:text-fuchsia-400 transition-colors">1x Datathon Winner</h4>
+                    <p className="text-sm text-neutral-400 leading-relaxed">3rd Position at the Zerve AI Datathon 2025, Techfest, IIT Bombay</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group relative p-6 md:p-8 rounded-3xl border border-white/5 bg-gradient-to-r from-neutral-900 to-black backdrop-blur-md overflow-hidden hover:border-indigo-500/30 hover:-translate-y-2 transition-all duration-500 shadow-2xl cursor-default">
+                <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
+                <div className="relative z-10 flex items-start gap-4 md:gap-6">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-500">💻</div>
+                  <div>
+                    <h4 className="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">2x Hackathon Finalist</h4>
+                    <p className="text-sm text-neutral-400 leading-relaxed">Including the PU Code Hackathon 3.0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
         {/* Technical Skills Segment */}
-        <div className="flex flex-col gap-12">
-          <div className="inline-flex items-center gap-4">
-            <h2 className="font-display text-3xl md:text-5xl font-black tracking-tight text-primary uppercase">
-              TECHNICAL SKILLS
+        <div id="skills" className="flex flex-col gap-16 pt-20" style={{ animation: 'fadeInUp 0.8s ease-out 0.8s both' }}>
+          
+          <div className="flex flex-col lg:flex-row gap-8 items-start lg:items-center justify-between">
+            <h2 className="font-sans text-4xl md:text-6xl font-black tracking-tight text-primary uppercase drop-shadow-lg">
+              TECHNICAL <br/> ARSENAL
             </h2>
-            <div className="h-px flex-1 bg-neutral-900 max-w-xs"></div>
+            <div className="h-px flex-1 bg-gradient-to-r from-neutral-800 via-neutral-800 to-transparent max-w-xl hidden lg:block"></div>
           </div>
 
-          <div className="flex flex-col gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {skills.map((skillGroup, idx) => (
-              <div key={idx} className="flex flex-col lg:flex-row lg:items-start gap-4 lg:gap-12">
-                <div className="lg:w-1/4 shrink-0">
-                  <h3 className="text-xs font-bold tracking-widest text-neutral-500 uppercase mt-2">
-                    {skillGroup.category}
-                  </h3>
-                </div>
-                <div className="flex flex-wrap gap-3 lg:w-3/4">
+              <div 
+                key={idx} 
+                className="group relative p-8 rounded-3xl border border-white/5 bg-neutral-950/50 backdrop-blur-md hover:bg-white/5 hover:border-white/10 transition-all duration-500 shadow-2xl"
+              >
+                <h3 className="text-xs md:text-sm font-bold tracking-widest text-transparent bg-clip-text bg-gradient-accent uppercase mb-8 flex items-center gap-3">
+                  <span className="w-8 h-px bg-fuchsia-500/50"></span>
+                  {skillGroup.category}
+                </h3>
+                <div className="flex flex-wrap gap-3">
                   {skillGroup.items.map((skill, i) => (
                     <div 
                       key={i}
-                      className="px-4 py-2 bg-neutral-950 border border-neutral-800 rounded-full text-sm font-medium text-neutral-300 hover:text-white hover:border-neutral-600 hover:scale-105 transition-all duration-300 cursor-default"
+                      className="px-5 py-2.5 bg-black/80 border border-white/5 rounded-full text-xs md:text-sm font-medium text-neutral-400 hover:text-white hover:bg-white/10 hover:border-white/20 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] transition-all duration-300 cursor-default"
                     >
                       {skill}
                     </div>
