@@ -3,10 +3,18 @@
   <p><b>Artificial Intelligence & Data Science Engineer</b></p>
 </div>
 
+<div align="center">
+  <p>
+    <a href="https://github.com/harshalnnpednekar"><b>GitHub</b></a> • 
+    <a href="https://www.linkedin.com/in/harshal-pednekar-066554361"><b>LinkedIn</b></a> • 
+    <a href="Resume%20HP.pdf"><b>Resume</b></a>
+  </p>
+</div>
+
 <br />
 
 ## Professional Profile
-I am an Artificial Intelligence and Data Science engineering student focused on building scalable, end-to-end machine learning models and intelligent systems. I specialize in designing robust AI architectures, deploying data-driven solutions, and integrating predictive analytics into production environments. My goal is to apply theoretical machine learning concepts to solve complex, real-world business challenges efficiently.
+I am an undergraduate student pursuing Artificial Intelligence and Data Science engineering, focused on building scalable, end-to-end machine learning models and intelligent systems. I specialize in designing robust AI architectures, deploying data-driven solutions, and integrating predictive analytics into production environments. My goal is to apply theoretical machine learning concepts to solve complex, real-world business challenges efficiently.
 
 ---
 
@@ -36,7 +44,7 @@ I am an Artificial Intelligence and Data Science engineering student focused on 
 
 ## Achievements & Awards
 - **3rd Position Nationally:** Zerve AI Datathon 2025 (Hosted at Techfest, IIT Bombay). Recognized for rapid dataset analysis and building highly accurate predictive models under time constraints.
-- **Hackathon Finalist:** Achieved top rankings in multiple engineering competitions, including a finals appearance at the PU Code Hackathon 3.0, demonstrating strong rapid prototyping and problem-solving capabilities.
+- **1x Hackathon Finalist:** Achieved a national-level finals appearance at the PU Code Hackathon 3.0, demonstrating strong rapid prototyping and problem-solving capabilities.
 
 ---
 

@@ -56,30 +56,71 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
               <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/5 to-transparent group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none skew-x-12"></div>
 
-              <div className="relative z-10 flex flex-col justify-between h-full gap-6">
+              <div className="relative z-10 flex flex-col justify-start h-full gap-8">
                 <h3 className="text-xs font-bold tracking-widest text-fuchsia-400 uppercase">Education & Academics</h3>
                 <div>
                   <h4 className="text-2xl md:text-3xl font-bold text-white mb-2">B.Tech in Artificial Intelligence & Data Science</h4>
                   <p className="text-lg text-neutral-400">Vivekanand Education Society's Institute of Technology (VESIT)</p>
                 </div>
-                <div className="inline-flex items-center gap-4 px-5 py-3 bg-black/50 border border-white/10 rounded-2xl w-fit">
-                  <span className="text-2xl font-black text-transparent bg-clip-text bg-gradient-accent">9.63/10</span>
-                  <div className="w-px h-8 bg-white/10"></div>
-                  <span className="text-xs font-bold text-neutral-400 uppercase tracking-wider">CGPA<br />(Till Sem 4)</span>
+                <div className="flex flex-col gap-4 mt-6 w-full">
+                  {/* Row 1: The Semesters */}
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-3 w-full">
+                    {[
+                      { sem: 'Sem 1', score: '9.91', delay: '0.3s' },
+                      { sem: 'Sem 2', score: '9.50', delay: '0.4s' },
+                      { sem: 'Sem 3', score: '9.65', delay: '0.5s' },
+                      { sem: 'Sem 4', score: '9.50', delay: '0.6s' },
+                    ].map((item, idx) => (
+                      <div 
+                        key={idx} 
+                        className="group/sem relative flex flex-col items-center justify-center py-4 bg-black/40 border border-white/5 rounded-2xl hover:bg-white/5 hover:border-white/20 transition-all duration-300 overflow-hidden shadow-inner"
+                        style={{ animation: `fadeInUp 0.6s ease-out ${item.delay} both` }}
+                      >
+                         <div className="text-[10px] text-neutral-500 font-bold uppercase tracking-widest mb-1 group-hover/sem:text-white transition-colors">{item.sem}</div>
+                         <div className="text-xl md:text-2xl font-black text-white">{item.score}</div>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Row 2: The Overall CGPA */}
+                  <div className="relative flex items-center justify-between p-5 md:p-6 bg-gradient-to-r from-fuchsia-900/20 to-indigo-900/20 border border-white/10 rounded-2xl hover:border-fuchsia-500/50 transition-all duration-500 overflow-hidden w-full group/cgpa" style={{ animation: `fadeInUp 0.6s ease-out 0.7s both` }}>
+                    <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover/cgpa:opacity-10 transition-opacity duration-500"></div>
+                    <div className="relative z-10 flex flex-col">
+                      <span className="text-xs md:text-sm font-bold text-white uppercase tracking-wider">Cumulative Grade Point</span>
+                      <span className="text-xs text-neutral-400 mt-1">Average Till Semester 4</span>
+                    </div>
+                    <div className="relative z-10 text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-accent tracking-tighter">
+                      9.63
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Mission Block */}
-            <div className="md:col-span-1 group relative p-8 rounded-3xl border border-white/10 bg-gradient-to-br from-indigo-900/40 to-neutral-900 backdrop-blur-md overflow-hidden hover:border-indigo-500/50 hover:-translate-y-2 transition-all duration-500 shadow-2xl cursor-default flex flex-col justify-start" style={{ animation: 'fadeInUp 0.8s ease-out 0.3s both' }}>
+            <div className="md:col-span-1 group relative p-8 rounded-3xl border border-white/10 bg-white/10 backdrop-blur-md overflow-hidden hover:border-white/30 hover:-translate-y-2 transition-all duration-500 shadow-2xl cursor-default flex flex-col justify-start" style={{ animation: 'fadeInUp 0.8s ease-out 0.3s both' }}>
               <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
               <div className="relative z-10 h-full flex flex-col justify-between">
                 <div>
                   <h3 className="text-xs font-bold tracking-widest text-indigo-400 uppercase mb-6">Core Philosophy</h3>
-                  <h4 className="text-white font-bold text-base mb-2">Engineering Intelligence</h4>
-                  <p className="text-sm text-neutral-400 leading-relaxed">
+                  <h4 className="text-white font-bold text-base mb-3">Engineering Intelligence</h4>
+                  <p className="text-sm text-neutral-400 leading-relaxed mb-6">
                     Transforming raw data into actionable insights and building scalable, user-centric applications. My focus lies at the intersection of applied machine learning, advanced LLM architectures, and robust full-stack development to solve real-world challenges.
                   </p>
+                  <ul className="space-y-4">
+                    <li className="flex items-start gap-3">
+                      <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></div>
+                      <span className="text-sm text-neutral-400"><span className="text-white font-semibold">Data-Driven:</span> Emphasizing mathematical rigor over pure intuition.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-fuchsia-500 flex-shrink-0"></div>
+                      <span className="text-sm text-neutral-400"><span className="text-white font-semibold">Scalable Architectures:</span> Designing systems built for long-term growth.</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-purple-500 flex-shrink-0"></div>
+                      <span className="text-sm text-neutral-400"><span className="text-white font-semibold">User-Centric:</span> Ensuring deep tech serves human needs seamlessly.</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -158,8 +199,8 @@ export default function About() {
                 <div className="relative z-10 flex items-start gap-4 md:gap-6">
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-500">💻</div>
                   <div>
-                    <h4 className="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">2x Hackathon Finalist</h4>
-                    <p className="text-sm text-neutral-400 leading-relaxed">Recognized for rapid prototyping and innovative problem-solving, including a top finish at the PU Code Hackathon 3.0.</p>
+                    <h4 className="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">1x Hackathon Finalist</h4>
+                    <p className="text-sm text-neutral-400 leading-relaxed">Recognized for rapid prototyping and innovative problem-solving, securing a top finish at the national-level PU Code Hackathon 3.0.</p>
                   </div>
                 </div>
               </div>
