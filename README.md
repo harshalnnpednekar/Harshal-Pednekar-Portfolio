@@ -1,50 +1,70 @@
 <div align="center">
   <h1>Harshal Pednekar</h1>
-  <p><b>Artificial Intelligence & Data Science Engineer</b></p>
+  <p><strong>Artificial Intelligence & Data Science Student · Machine Learning Developer · Generative AI Architect</strong></p>
 </div>
 
-<div align="center">
-  <p>
-    <a href="https://github.com/harshalnnpednekar"><b>GitHub</b></a> • 
-    <a href="https://www.linkedin.com/in/harshal-pednekar-066554361"><b>LinkedIn</b></a> • 
-    <a href="Resume%20HP.pdf"><b>Resume</b></a>
-  </p>
-</div>
+<p align="center">
+  <a href="https://github.com/harshalnnpednekar" target="_blank">
+    <img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <a href="https://www.linkedin.com/in/harshal-pednekar-066554361" target="_blank">
+    <img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="Resume%20HP.pdf" target="_blank">
+    <img src="https://img.shields.io/badge/RESUME-PDF-D14836?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Resume" />
+  </a>
+</p>
 
-<br />
+---
 
-## Professional Profile
+## 🧑‍💻 Professional Profile
 I am an undergraduate student pursuing Artificial Intelligence and Data Science engineering, focused on building scalable, end-to-end machine learning models and intelligent systems. I specialize in designing robust AI architectures, deploying data-driven solutions, and integrating predictive analytics into production environments. My goal is to apply theoretical machine learning concepts to solve complex, real-world business challenges efficiently.
 
----
-
-## Education
-**Bachelor of Technology (B.Tech) in Artificial Intelligence & Data Science**  
-*Vivekanand Education Society's Institute of Technology (VESIT)*  
-- **Current CGPA:** 9.63 / 10.0
-- **Relevant Coursework:** Data Structures & Algorithms, Database Management Systems, Object-Oriented Programming, Operating Systems, Probability and Statistics.
-
----
-
-## Core Competencies & Skills
-- **Generative AI & LLMs:** Designing Retrieval-Augmented Generation (RAG) pipelines, fine-tuning large language models, and developing multi-agent systems.
-- **Machine Learning & Predictive Modeling:** Building robust ML pipelines encompassing data ingestion, exploratory data analysis (EDA), feature engineering, and model training.
-- **Data Science & Analytics:** Analyzing large unstructured datasets to extract actionable insights and develop strategic visual dashboards.
-- **Deep Learning & Computer Vision:** Implementing Convolutional Neural Networks (CNNs) for image classification and object detection, as well as Transformer architectures for NLP applications.
-- **Software Development:** Building cross-platform applications and integrating AI models using React.js, Flutter, and FastAPI.
-
----
-
-## Professional Experience
-**Data Analytics Intern** | *Tata GenAI Powered Platform (Virtual)*
-- Streamlined complex data cleaning and exploratory data analysis (EDA) processes by leveraging advanced Generative AI configurations.
-- Synthesized business trend datasets into clear, strategic dashboards utilized by corporate insight groups to inform decision-making.
+<p align="center">
+  <table align="center" width="100%">
+    <tr>
+      <td align="center" width="25%">🎓 <strong>Degree & Institution</strong></td>
+      <td align="center" width="25%">📊 <strong>Academic Standing</strong></td>
+      <td align="center" width="25%">🏆 <strong>Datathon Track</strong></td>
+      <td align="center" width="25%">🏁 <strong>Hackathon Record</strong></td>
+    </tr>
+    <tr>
+      <td align="center">B.Tech Undergraduate<br>Artificial Intelligence & Data Science<br><em>VESIT Mumbai</em></td>
+      <td align="center"><strong>9.63 CGPA</strong><br>(Upto Sem 4)<br><em>Top Tier</em></td>
+      <td align="center"><strong>3rd Position Nationally</strong><br>Zerve AI Datathon 2025<br><em>IIT Bombay Techfest</em></td>
+      <td align="center"><strong>1x National Finalist</strong><br>Forums & Prototyping<br><em>PU Code Hackathon 3.0</em></td>
+    </tr>
+  </table>
+</p>
 
 ---
 
-## Achievements & Awards
-- **3rd Position Nationally:** Zerve AI Datathon 2025 (Hosted at Techfest, IIT Bombay). Recognized for rapid dataset analysis and building highly accurate predictive models under time constraints.
-- **1x Hackathon Finalist:** Achieved a national-level finals appearance at the PU Code Hackathon 3.0, demonstrating strong rapid prototyping and problem-solving capabilities.
+## 🛠️ Core Competencies & Domain Matrix
+
+| Category | Specialized Domains & Technical Frameworks |
+| :--- | :--- |
+| **Generative AI & LLMs** | Retrieval-Augmented Generation (RAG) pipelines, Large Language Models (LLMs) fine-tuning, Multi-Agent systems, Prompt Engineering |
+| **Machine Learning** | End-to-end ML pipelines, Exploratory Data Analysis (EDA), Feature Engineering, Supervised Learning, Text Classification |
+| **Data Science & Analytics** | Unstructured dataset parsing, Statistical analysis, Interactive validation interfaces, Strategic data visualization dashboards |
+| **Deep Learning & NLP** | Neural Networks architecture, Convolutional Neural Networks (CNNs), Image Classification, Computer Vision, Transformer models, Natural Language Processing (NLP) |
+| **Software Development** | Cross-platform mobile development, AI model backend integration, FastAPI, React.js, Flutter, SQL, Git/GitHub |
+
+---
+
+## 💼 Professional Experience
+
+### **Data Analytics Intern** | *Tata GenAI Powered Platform (Virtual)*
+* Streamlined complex data cleaning and exploratory data analysis (EDA) processes by leveraging advanced Generative AI configurations.
+* Synthesized business trend datasets into clear, strategic dashboards utilized by corporate insight groups to inform decision-making.
+
+---
+
+## 🏆 Achievements & Awards
+
+* 🥉 **3rd Position Nationally** — Zerve AI Datathon 2025 *(Hosted at Techfest, IIT Bombay)*  
+  *Recognized for rapid dataset analysis, high-frequency feature extraction, and building highly accurate predictive models under strict time constraints.*
+* 🏁 **1x National Hackathon Finalist** — PU Code Hackathon 3.0 *(National Level, Vadodara)*  
+  *Achieved a national-level finals appearance, demonstrating strong rapid prototyping, problem-solving, and team execution capabilities.*
 
 ---
 
