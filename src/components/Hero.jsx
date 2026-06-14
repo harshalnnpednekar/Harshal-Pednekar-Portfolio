@@ -1,28 +1,4 @@
-import { useState, useEffect } from "react";
-
 export default function Hero() {
-  const [isScrolling, setIsScrolling] = useState(false);
-
-  useEffect(() => {
-    let scrollTimeout;
-
-    const handleScroll = () => {
-      setIsScrolling(true);
-      clearTimeout(scrollTimeout);
-      
-      scrollTimeout = setTimeout(() => {
-        setIsScrolling(false);
-      }, 150);
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      clearTimeout(scrollTimeout);
-    };
-  }, []);
-
   return (
     <section className="relative min-h-screen w-full flex flex-col justify-center px-6 md:px-16 pt-24 pb-12 overflow-hidden z-0">
       
@@ -81,19 +57,6 @@ export default function Hero() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Dynamic Reactive Scroll Indicator Line */}
-        <div className="mt-16 flex items-end">
-          <div className="flex flex-col items-start" style={{ animation: `fadeInUp 0.8s ease-out 1.2s both` }}>
-            <div className="relative w-[1px] h-16 bg-gradient-to-b from-white/20 to-transparent overflow-hidden">
-              <div 
-                className={`absolute top-0 left-0 w-full h-1/3 bg-white shadow-[0_0_8px_#ffffff] transition-opacity duration-300 ${
-                  isScrolling ? 'opacity-100 animate-[scrollDown_1s_linear_infinite]' : 'opacity-0'
-                }`}
-              ></div>
-            </div>
-          </div>
         </div>
 
       </div>

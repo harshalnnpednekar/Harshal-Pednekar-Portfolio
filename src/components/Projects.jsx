@@ -13,13 +13,14 @@ export default function Projects() {
       category: "FULL STACK WEB",
       title: "Prashikshan NEP Platform",
       description: "Developed a multi-role data management platform for tracking metrics, automated logbook monitoring, and compliance analytics using a streamlined React/Node stack.",
-      link: "#", // placeholder for live project link
+      link: "https://github.com/harshalnnpednekar/SIH-Prashikshan-NEP",
+      image: "/PRASHIKSHAN.jpeg",
     }
   ];
 
   return (
-    <section id="projects" className="w-full bg-black pt-16 pb-12 px-4 border-t border-neutral-900">
-      <div className="max-w-7xl mx-auto flex flex-col gap-16 relative">
+    <section id="projects" className="w-full bg-black pt-10 pb-8 px-4 border-t border-neutral-900">
+      <div className="max-w-7xl mx-auto flex flex-col gap-8 relative">
         <div className="flex flex-col gap-4">
           <h2 className="font-sans text-5xl md:text-7xl font-black tracking-tighter text-primary uppercase">
             PROJECTS
@@ -27,7 +28,7 @@ export default function Projects() {
           <div className="w-24 h-1 bg-gradient-accent rounded-full"></div>
         </div>
 
-        <div className="flex flex-col gap-12 lg:gap-32 pb-8">
+        <div className="flex flex-col gap-12 lg:gap-16 pb-8">
           {projects.map((project, i) => (
             <div 
               key={i} 

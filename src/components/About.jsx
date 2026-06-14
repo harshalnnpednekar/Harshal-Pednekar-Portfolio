@@ -1,4 +1,3 @@
-import React from "react";
 
 export default function About() {
   const skills = [
@@ -25,7 +24,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="w-full bg-black pt-32 pb-16 px-4 border-t border-neutral-900 relative overflow-hidden">
+    <section id="about" className="w-full bg-black pt-12 pb-16 px-4 relative overflow-hidden">
 
       {/* Immersive Background Glow */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-fuchsia-900/10 rounded-full blur-[150px] pointer-events-none"></div>
@@ -118,6 +117,25 @@ export default function About() {
                       <p className="text-xs text-neutral-400 leading-relaxed">{spec.desc}</p>
                     </div>
                   ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Professional Experience Block */}
+            <div className="md:col-span-3 group relative p-8 rounded-3xl border border-white/10 bg-white/10 backdrop-blur-md overflow-hidden hover:border-white/30 hover:-translate-y-2 transition-all duration-500 shadow-2xl cursor-default" style={{ animation: 'fadeInUp 0.8s ease-out 0.55s both' }}>
+              <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/5 to-transparent group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none skew-x-12"></div>
+              
+              <div className="relative z-10 flex flex-col justify-between h-full gap-6">
+                <h3 className="text-xs font-bold tracking-widest text-fuchsia-400 uppercase">Professional Experience</h3>
+                <div>
+                  <h4 className="text-lg md:text-xl font-bold text-white mb-2 flex items-center gap-3">
+                    <span className="text-xl">🔬</span> Data Analytics Intern · Tata GenAI Powered Platform (Virtual)
+                  </h4>
+                  <ul className="text-sm md:text-base text-neutral-400 leading-relaxed list-disc list-outside ml-10 mt-4 space-y-2">
+                    <li>Leveraged Generative AI architectures for complex data cleaning configurations and exploratory data analysis (EDA).</li>
+                    <li>Synthesized business trend datasets to formulate strategic visual dashboards for corporate insight groups.</li>
+                  </ul>
                 </div>
               </div>
             </div>

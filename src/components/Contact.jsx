@@ -4,15 +4,15 @@ export default function Contact() {
 
 
   return (
-    <footer id="contact" className="w-full bg-black pt-16 pb-8 px-4 border-t border-neutral-900 relative overflow-hidden">
+    <footer id="contact" className="w-full bg-black pt-10 pb-6 px-4 border-t border-neutral-900 relative overflow-hidden">
       {/* Background ambient glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-64 bg-fuchsia-900/20 blur-[120px] rounded-full pointer-events-none"></div>
 
-      <div className="max-w-7xl mx-auto flex flex-col items-center gap-24 relative z-10">
+      <div className="max-w-7xl mx-auto flex flex-col items-center gap-16 relative z-10">
         
         {/* Massive CTA Section */}
         <div className="flex flex-col items-center gap-10 text-center w-full">
-          <h2 className="font-sans text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter text-primary">
+          <h2 className="font-sans text-3xl md:text-5xl lg:text-6xl font-black tracking-tighter text-primary">
             READY TO BUILD SOMETHING <br />
             <span className="text-transparent bg-clip-text bg-gradient-accent">EXTRAORDINARY?</span>
           </h2>
