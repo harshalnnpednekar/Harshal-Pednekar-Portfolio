@@ -56,13 +56,13 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
               <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/5 to-transparent group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none skew-x-12"></div>
 
-              <div className="relative z-10 flex flex-col justify-start h-full gap-8">
+              <div className="relative z-10 flex flex-col justify-start h-full gap-6">
                 <h3 className="text-xs font-bold tracking-widest text-fuchsia-400 uppercase">Education & Academics</h3>
                 <div>
                   <h4 className="text-2xl md:text-3xl font-bold text-white mb-2">B.Tech in Artificial Intelligence & Data Science</h4>
                   <p className="text-lg text-neutral-400">Vivekanand Education Society's Institute of Technology (VESIT)</p>
                 </div>
-                <div className="flex flex-col gap-4 mt-6 w-full">
+                <div className="flex flex-col gap-6 mt-2 w-full">
                   {/* Row 1: The Semesters */}
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-3 w-full">
                     {[
