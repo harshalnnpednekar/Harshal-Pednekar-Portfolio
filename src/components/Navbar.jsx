@@ -31,7 +31,7 @@ export default function Navbar() {
     <div className="absolute top-0 left-0 right-0 z-50 flex justify-center mt-6 px-4">
       <nav className="w-full max-w-6xl backdrop-blur-xl bg-white/5 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)] rounded-2xl px-6 py-4 flex items-center justify-between transition-all duration-500 hover:bg-white/10 hover:border-fuchsia-500/20 hover:shadow-[0_10px_40px_rgba(217,70,239,0.15)] hover:-translate-y-1">
         <div className="flex items-center gap-2 flex-1">
-          <a href="#" className="w-8 h-8 rounded-full bg-gradient-accent flex items-center justify-center font-sans font-bold text-sm text-white hover:scale-110 hover:rotate-12 hover:shadow-[0_0_20px_rgba(217,70,239,0.6)] transition-all duration-300">
+          <a href="/" className="w-8 h-8 rounded-full bg-gradient-accent flex items-center justify-center font-sans font-bold text-sm text-white hover:scale-110 hover:rotate-12 hover:shadow-[0_0_20px_rgba(217,70,239,0.6)] transition-all duration-300">
             HP
           </a>
         </div>

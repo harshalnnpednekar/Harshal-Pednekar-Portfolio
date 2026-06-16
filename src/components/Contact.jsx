@@ -1,7 +1,8 @@
 export default function Contact() {
   const currentYear = new Date().getFullYear();
-
-
+  const emailUser = 'harsh.pednekar';
+  const emailDomain = 'gmail.com';
+  const email = `${emailUser}@${emailDomain}`;
 
   return (
     <footer id="contact" className="w-full bg-black pt-10 pb-6 px-4 border-t border-neutral-900 relative overflow-hidden">
@@ -22,7 +23,7 @@ export default function Contact() {
             <div className="absolute -inset-1 rounded-full bg-gradient-accent blur-md opacity-75 group-hover:opacity-100 transition duration-500 group-hover:duration-200"></div>
             
             <a 
-              href="mailto:harsh.pednekar@gmail.com" 
+              href={`mailto:${email}`} 
               className="relative flex items-center justify-center px-12 py-5 bg-neutral-950 rounded-full text-primary font-bold tracking-widest text-sm md:text-base uppercase transition-transform duration-300 group-hover:scale-[0.98]"
             >
               CONTACT ME

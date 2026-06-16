@@ -54,6 +54,8 @@ export default function Projects() {
                 
                 <a 
                   href={project.link} 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex w-fit items-center justify-center px-8 py-3 rounded-full border border-neutral-700 bg-transparent text-primary text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-black hover:border-white transition-all duration-300"
                 >
                   LIVE PROJECT

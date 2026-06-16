@@ -29,3 +29,8 @@ public/email-spam.png.png
 public/PRASHIKSHAN.jpeg
 public/prashikshan.jpeg
 public/Resume HP.pdf
+
+# Environment variables
+.env
+.env.*
+.env.local
