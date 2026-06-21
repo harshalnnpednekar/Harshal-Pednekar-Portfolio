@@ -51,7 +51,7 @@ export default function Navbar() {
         </ul>
 
         <div className="flex items-center gap-4 flex-1 justify-end">
-          <div className="relative hidden sm:block" ref={dropdownRef}>
+          <div className="relative" ref={dropdownRef}>
             <button 
               onClick={() => setShowResumeOptions(!showResumeOptions)}
               className="group relative flex items-center justify-center px-6 py-2 rounded-full bg-neutral-950 border border-neutral-900 hover:border-fuchsia-500/50 hover:shadow-[0_0_20px_rgba(217,70,239,0.3)] hover:-translate-y-0.5 hover:scale-105 transition-all duration-300 overflow-hidden cursor-pointer"
