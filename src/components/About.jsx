@@ -1,5 +1,5 @@
-import { Brain, Bot, Network, BarChart, LineChart, MessageSquare, BookOpen, Search, Eye, Server, Cpu, Layers, Code } from 'lucide-react';
-import { FaPython, FaJava, FaReact, FaHtml5, FaGitAlt, FaGithub, FaFigma, FaDatabase } from 'react-icons/fa';
+import { Brain, Bot, Network, BarChart, LineChart, MessageSquare, BookOpen, Search, Eye, Server, Cpu, Layers, Code, Shield, Lock, Terminal, ShieldAlert } from 'lucide-react';
+import { FaPython, FaJava, FaReact, FaHtml5, FaGitAlt, FaGithub, FaFigma, FaDatabase, FaCss3Alt } from 'react-icons/fa';
 import { SiJavascript, SiDart, SiFlutter, SiPandas, SiNumpy, SiFastapi, SiScikitlearn, SiStreamlit, SiGooglecolab } from 'react-icons/si';
 
 export default function About() {
@@ -27,6 +27,7 @@ export default function About() {
         { name: "Dart", icon: <SiDart size={16} className="text-cyan-400" /> },
         { name: "SQL", icon: <FaDatabase size={16} className="text-purple-400" /> },
         { name: "HTML", icon: <FaHtml5 size={16} className="text-orange-500" /> },
+        { name: "CSS", icon: <FaCss3Alt size={16} className="text-blue-500" /> },
         { name: "JavaScript", icon: <SiJavascript size={16} className="text-yellow-400" /> }
       ],
     },
@@ -64,6 +65,17 @@ export default function About() {
         { name: "Database Management Systems", icon: <Server size={16} className="text-blue-400" /> },
         { name: "Operating Systems", icon: <Cpu size={16} className="text-purple-400" /> },
         { name: "Object-Oriented Programming", icon: <Code size={16} className="text-orange-400" /> }
+      ],
+    },
+    {
+      category: "CYBER SECURITY",
+      fullWidth: true,
+      items: [
+        { name: "Computer Networks", icon: <Network size={16} className="text-blue-400" /> },
+        { name: "Cryptography", icon: <Lock size={16} className="text-emerald-400" /> },
+        { name: "Ethical Hacking", icon: <Terminal size={16} className="text-green-500" /> },
+        { name: "System Security", icon: <ShieldAlert size={16} className="text-red-400" /> },
+        { name: "Digital Forensics", icon: <Search size={16} className="text-cyan-400" /> }
       ],
     },
   ];
@@ -254,6 +266,75 @@ export default function About() {
           </div>
         </div>
 
+        {/* Academic Journey Segment */}
+        <div id="education" className="flex flex-col gap-10">
+          
+          {/* Header */}
+          <div className="flex flex-col gap-4 mb-4" style={{ animation: 'fadeInUp 0.8s ease-out 1.0s both' }}>
+            <h2 className="font-sans text-5xl md:text-7xl font-black tracking-tighter text-primary uppercase drop-shadow-lg">
+              ACADEMIC JOURNEY
+            </h2>
+            <div className="w-24 h-1 bg-gradient-accent rounded-full"></div>
+          </div>
+
+          {/* Timeline List */}
+          <div className="flex flex-col gap-6">
+            {[
+              {
+                degree: "B.Tech in Artificial Intelligence & Data Science",
+                institution: "VESIT, Mumbai",
+                score: "9.63 / 10 CGPA\n(Upto Sem 4)",
+                timeline: "Aug 2024 — Present"
+              },
+              {
+                degree: "Higher Secondary Certificate (HSC)",
+                institution: "B.N. Bandodkar College, Thane",
+                score: "86.67%",
+                timeline: "Jun 2022 — Apr 2024"
+              },
+              {
+                degree: "Secondary School Certificate (SSC)",
+                institution: "A.K. Joshi English High School, Thane",
+                score: "94.00%",
+                timeline: "Jun 2012 — Apr 2022"
+              }
+            ].map((edu, idx) => (
+              <div 
+                key={idx} 
+                className="group relative p-6 md:p-8 rounded-3xl border border-white/10 bg-white/10 backdrop-blur-md overflow-hidden hover:border-white/30 hover:-translate-y-2 transition-all duration-500 shadow-2xl flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-8"
+                style={{ animation: `fadeInUp 0.8s ease-out ${1.1 + idx * 0.15}s both` }}
+              >
+                {/* Column 1: Degree & Institution */}
+                <div className="flex flex-col gap-2 flex-1 min-w-[200px] md:max-w-[45%]">
+                  <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-fuchsia-400 transition-colors">
+                    {edu.degree}
+                  </h3>
+                  <p className="text-sm md:text-base text-neutral-400">{edu.institution}</p>
+                </div>
+                
+                {/* Mobile Wrapper (Disappears on Desktop via md:contents) */}
+                <div className="flex items-center justify-between w-full mt-2 md:mt-0 md:contents">
+                  
+                  {/* Column 2: Score / Marks */}
+                  <div className="flex-1 flex justify-start md:justify-center min-w-[120px]">
+                    <span className="inline-flex items-center px-4 py-1.5 md:px-5 md:py-2 bg-white/5 border border-fuchsia-500/20 md:border-white/10 rounded-full text-xs md:text-sm font-medium text-neutral-300 whitespace-pre-line text-center leading-tight transition-all duration-300 hover:bg-fuchsia-500/20 hover:border-fuchsia-400/50 md:hover:border-fuchsia-400/50 hover:text-white hover:scale-110 hover:shadow-[0_0_20px_rgba(217,70,239,0.5)] cursor-default">
+                      {edu.score}
+                    </span>
+                  </div>
+                  
+                  {/* Column 3: Timeline */}
+                  <div className="flex-1 flex justify-end min-w-[150px]">
+                    <span className="inline-flex items-center px-4 py-1.5 md:px-5 md:py-2 bg-white/5 border border-fuchsia-500/20 md:border-white/10 rounded-full text-xs md:text-sm font-bold tracking-widest text-fuchsia-400 md:text-white uppercase whitespace-nowrap transition-all duration-300 hover:bg-fuchsia-500/20 hover:border-fuchsia-400/50 md:hover:border-fuchsia-400/50 hover:text-white hover:scale-110 hover:shadow-[0_0_20px_rgba(217,70,239,0.5)] cursor-default">
+                      {edu.timeline}
+                    </span>
+                  </div>
+                  
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Technical Skills Segment */}
         <div id="skills" className="flex flex-col gap-10" style={{ animation: 'fadeInUp 0.8s ease-out 0.8s both' }}>
 
@@ -268,7 +349,7 @@ export default function About() {
             {skills.map((skillGroup, idx) => (
               <div
                 key={idx}
-                className={`group relative p-8 rounded-3xl border border-white/10 bg-neutral-800/40 backdrop-blur-md overflow-hidden hover:bg-neutral-800/60 hover:border-white/30 hover:-translate-y-2 transition-all duration-500 shadow-2xl h-full flex flex-col justify-start ${idx === 0 ? 'lg:col-span-2' : ''}`}
+                className={`group relative p-8 rounded-3xl border border-white/10 bg-neutral-800/40 backdrop-blur-md overflow-hidden hover:bg-neutral-800/60 hover:border-white/30 hover:-translate-y-2 transition-all duration-500 shadow-2xl h-full flex flex-col justify-start ${skillGroup.fullWidth ? 'lg:col-span-2' : (idx === 0 ? 'lg:col-span-2' : '')}`}
               >
                 <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none"></div>
                 <div className="w-full">
@@ -293,63 +374,78 @@ export default function About() {
           </div>
         </div>
 
-        {/* Academic Journey Segment */}
-        <div id="education" className="flex flex-col gap-10" style={{ animation: 'fadeInUp 0.8s ease-out 1.0s both' }}>
+        {/* Certifications & Achievements Segment */}
+        <div id="certifications" className="flex flex-col gap-10">
           
           {/* Header */}
-          <div className="flex flex-col gap-4 mb-4">
+          <div className="flex flex-col gap-4 mb-4" style={{ animation: 'fadeInUp 0.8s ease-out 1.4s both' }}>
             <h2 className="font-sans text-5xl md:text-7xl font-black tracking-tighter text-primary uppercase drop-shadow-lg">
-              ACADEMIC JOURNEY
+              CERTIFICATIONS
             </h2>
             <div className="w-24 h-1 bg-gradient-accent rounded-full"></div>
           </div>
 
-          {/* Timeline List */}
-          <div className="flex flex-col border border-white/10 rounded-3xl overflow-hidden bg-neutral-900/40 backdrop-blur-md shadow-2xl">
+          {/* Groups */}
+          <div className="flex flex-col gap-6">
             {[
               {
-                degree: "B.Tech in Artificial Intelligence & Data Science",
-                institution: "VESIT, Mumbai",
-                score: "9.63 / 10 CGPA\n(Upto Sem 4)",
-                timeline: "Aug 2024 — Present"
+                issuer: "HackerRank",
+                color: "text-green-400",
+                certs: [
+                  { title: "4 Star Badge in Python", type: "Badge" }
+                ]
               },
               {
-                degree: "Higher Secondary Certificate (HSC)",
-                institution: "B.N. Bandodkar College, Thane",
-                score: "86.67%",
-                timeline: "Jun 2022 — Apr 2024"
+                issuer: "IBM",
+                color: "text-blue-400",
+                certs: [
+                  { title: "AI Literacy", type: "Certificate" },
+                  { title: "AI Fundamentals: Foundations for Understanding AI", type: "Certificate" },
+                  { title: "AI Fundamentals: Language and Vision in AI", type: "Certificate" },
+                  { title: "Artificial Intelligence Fundamentals", type: "Certificate" }
+                ]
               },
               {
-                degree: "Secondary School Certificate (SSC)",
-                institution: "A.K. Joshi English High School, Thane",
-                score: "94.00%",
-                timeline: "Jun 2012 — Apr 2022"
+                issuer: "Udemy",
+                color: "text-purple-400",
+                certs: [
+                  { title: "Data Science, Machine Learning, DL and NLP Bootcamp", type: "Bootcamp" },
+                  { title: "Ethical Hacking and Penetration Testing", type: "Certificate" }
+                ]
+              },
+              {
+                issuer: "Oracle",
+                color: "text-red-400",
+                certs: [
+                  { title: "Artificial Intelligence and Machine Learning in Java", type: "Certificate" }
+                ]
               }
-            ].map((edu, idx) => (
-              <div 
-                key={idx} 
-                className="group relative p-6 md:p-8 border-b border-white/10 last:border-b-0 hover:bg-white/[0.04] transition-all duration-300 flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-8"
-              >
-                {/* Column 1: Degree & Institution */}
-                <div className="flex flex-col gap-2 flex-1 min-w-[200px] md:max-w-[45%]">
-                  <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-fuchsia-400 transition-colors">
-                    {edu.degree}
+            ].map((group, groupIdx) => (
+              <div key={groupIdx} className="group relative p-6 md:p-8 rounded-3xl border border-white/10 bg-white/10 backdrop-blur-md overflow-hidden hover:border-white/30 hover:-translate-y-2 transition-all duration-500 shadow-2xl flex flex-col md:flex-row gap-4 md:gap-8 items-start w-full" style={{ animation: `fadeInUp 0.8s ease-out ${1.5 + groupIdx * 0.15}s both` }}>
+                
+                {/* Background Glow on Hover */}
+                <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
+
+                {/* Group Header (Left Sidebar) */}
+                <div className="md:w-40 lg:w-48 flex-shrink-0 pt-2 w-full relative z-10">
+                  <h3 className={`text-sm md:text-base font-bold tracking-widest uppercase ${group.color} flex items-center gap-4`}>
+                    {group.issuer}
+                    <span className={`md:hidden flex-1 h-px bg-current opacity-30`}></span>
                   </h3>
-                  <p className="text-sm md:text-base text-neutral-400">{edu.institution}</p>
                 </div>
                 
-                {/* Column 2: Score / Marks */}
-                <div className="flex-1 flex justify-start md:justify-center min-w-[120px]">
-                  <span className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 whitespace-pre-line text-center leading-tight">
-                    {edu.score}
-                  </span>
-                </div>
-                
-                {/* Column 3: Timeline */}
-                <div className="flex-1 flex justify-start md:justify-end min-w-[150px]">
-                  <span className="text-sm font-bold tracking-widest text-transparent bg-clip-text bg-gradient-accent uppercase whitespace-nowrap">
-                    {edu.timeline}
-                  </span>
+                {/* Group List (Right Content Grid) */}
+                <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+                  {group.certs.map((cert, idx) => (
+                    <div 
+                      key={idx} 
+                      className={`group relative p-5 border border-white/10 rounded-2xl bg-neutral-900/40 backdrop-blur-md shadow-xl hover:bg-white/[0.08] hover:border-white/20 transition-all duration-300 flex flex-col justify-center min-h-[90px] ${group.certs.length === 1 ? 'sm:col-span-2' : ''}`}
+                    >
+                      <h4 className="text-base font-medium text-neutral-300 group-hover:text-fuchsia-400 transition-colors leading-snug text-center">
+                        {cert.title}
+                      </h4>
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}
