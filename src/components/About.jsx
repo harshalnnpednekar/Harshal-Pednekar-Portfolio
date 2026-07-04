@@ -1,25 +1,70 @@
+import { Brain, Bot, Network, BarChart, LineChart, MessageSquare, BookOpen, Search, Eye, Server, Cpu, Layers, Code } from 'lucide-react';
+import { FaPython, FaJava, FaReact, FaHtml5, FaGitAlt, FaGithub, FaFigma, FaDatabase } from 'react-icons/fa';
+import { SiJavascript, SiDart, SiFlutter, SiPandas, SiNumpy, SiFastapi, SiScikitlearn, SiStreamlit, SiGooglecolab } from 'react-icons/si';
 
 export default function About() {
   const skills = [
     {
-      category: "CORE AI, ML & DATA SCIENCE",
-      items: ["Generative AI", "Machine Learning", "AI Agents", "Data Science", "Data Analysis", "Natural Language Processing (NLP)", "Large Language Models (LLMs)", "Retrieval-Augmented Generation (RAG)", "Deep Learning", "Computer Vision", "Neural Networks"],
+      category: "AI, ML & DATA SCIENCE",
+      items: [
+        { name: "Generative AI", icon: <Brain size={16} className="text-pink-400" /> },
+        { name: "Machine Learning", icon: <Bot size={16} className="text-indigo-400" /> },
+        { name: "AI Agents", icon: <Network size={16} className="text-purple-400" /> },
+        { name: "Data Science", icon: <BarChart size={16} className="text-emerald-400" /> },
+        { name: "Data Analytics", icon: <LineChart size={16} className="text-blue-400" /> },
+        { name: "Natural Language Processing (NLP)", icon: <MessageSquare size={16} className="text-fuchsia-400" /> },
+        { name: "Large Language Models (LLMs)", icon: <BookOpen size={16} className="text-orange-400" /> },
+        { name: "Retrieval-Augmented Generation (RAG)", icon: <Search size={16} className="text-cyan-400" /> },
+        { name: "Deep Learning", icon: <Network size={16} className="text-rose-400" /> },
+        { name: "Computer Vision", icon: <Eye size={16} className="text-teal-400" /> }
+      ],
     },
     {
       category: "LANGUAGES",
-      items: ["Python", "Java (OOP)", "Dart", "SQL", "HTML", "JavaScript"],
+      items: [
+        { name: "Python", icon: <FaPython size={16} className="text-blue-400" /> },
+        { name: "Java (OOP)", icon: <FaJava size={16} className="text-orange-400" /> },
+        { name: "Dart", icon: <SiDart size={16} className="text-cyan-400" /> },
+        { name: "SQL", icon: <FaDatabase size={16} className="text-purple-400" /> },
+        { name: "HTML", icon: <FaHtml5 size={16} className="text-orange-500" /> },
+        { name: "JavaScript", icon: <SiJavascript size={16} className="text-yellow-400" /> }
+      ],
     },
     {
       category: "FRAMEWORKS & LIBRARIES",
-      items: ["FastAPI", "Scikit-learn", "React.js", "Flutter", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Catboost"],
+      items: [
+        { name: "FastAPI", icon: <SiFastapi size={16} className="text-emerald-400" /> },
+        { name: "Scikit-learn", icon: <SiScikitlearn size={16} className="text-orange-400" /> },
+        { name: "React.js", icon: <FaReact size={16} className="text-cyan-400" /> },
+        { name: "Flutter", icon: <SiFlutter size={16} className="text-cyan-400" /> },
+        { name: "Pandas", icon: <SiPandas size={16} className="text-indigo-400" /> },
+        { name: "NumPy", icon: <SiNumpy size={16} className="text-blue-500" /> },
+        { name: "Matplotlib", icon: <BarChart size={16} className="text-orange-300" /> },
+        { name: "Seaborn", icon: <LineChart size={16} className="text-blue-300" /> },
+        { name: "Catboost", icon: <Bot size={16} className="text-yellow-300" /> }
+      ],
     },
     {
       category: "TOOLS & INFRASTRUCTURE",
-      items: ["Git", "GitHub", "Streamlit", "Google Colab", "Figma", "Stitch", "Google AI Studio", "Canva"],
+      items: [
+        { name: "Git", icon: <FaGitAlt size={16} className="text-orange-500" /> },
+        { name: "GitHub", icon: <FaGithub size={16} /> },
+        { name: "Streamlit", icon: <SiStreamlit size={16} className="text-red-400" /> },
+        { name: "Google Colab", icon: <SiGooglecolab size={16} className="text-orange-400" /> },
+        { name: "Figma", icon: <FaFigma size={16} className="text-pink-400" /> },
+        { name: "Stitch", icon: <Layers size={16} className="text-blue-400" /> },
+        { name: "Google AI Studio", icon: <Brain size={16} className="text-indigo-400" /> },
+        { name: "Canva", icon: <Layers size={16} className="text-cyan-400" /> }
+      ],
     },
     {
       category: "CS FUNDAMENTALS",
-      items: ["Data Structures & Algorithms", "Database Management Systems", "Operating Systems", "Object-Oriented Programming"],
+      items: [
+        { name: "Data Structures & Algorithms", icon: <Layers size={16} className="text-emerald-400" /> },
+        { name: "Database Management Systems", icon: <Server size={16} className="text-blue-400" /> },
+        { name: "Operating Systems", icon: <Cpu size={16} className="text-purple-400" /> },
+        { name: "Object-Oriented Programming", icon: <Code size={16} className="text-orange-400" /> }
+      ],
     },
   ];
 
@@ -71,13 +116,13 @@ export default function About() {
                       { sem: 'Sem 3', score: '9.65', delay: '0.5s' },
                       { sem: 'Sem 4', score: '9.50', delay: '0.6s' },
                     ].map((item, idx) => (
-                      <div 
-                        key={idx} 
+                      <div
+                        key={idx}
                         className="group/sem relative flex flex-col items-center justify-center py-4 bg-black/40 border border-white/5 rounded-2xl hover:bg-white/5 hover:border-white/20 transition-all duration-300 overflow-hidden shadow-inner"
                         style={{ animation: `fadeInUp 0.6s ease-out ${item.delay} both` }}
                       >
-                         <div className="text-[10px] text-neutral-500 font-bold uppercase tracking-widest mb-1 group-hover/sem:text-white transition-colors">{item.sem}</div>
-                         <div className="text-xl md:text-2xl font-black text-white">{item.score}</div>
+                        <div className="text-[10px] text-neutral-500 font-bold uppercase tracking-widest mb-1 group-hover/sem:text-white transition-colors">{item.sem}</div>
+                        <div className="text-xl md:text-2xl font-black text-white">{item.score}</div>
                       </div>
                     ))}
                   </div>
@@ -166,7 +211,7 @@ export default function About() {
             <div className="md:col-span-3 group relative p-8 rounded-3xl border border-white/10 bg-white/10 backdrop-blur-md overflow-hidden hover:border-white/30 hover:-translate-y-2 transition-all duration-500 shadow-2xl cursor-default" style={{ animation: 'fadeInUp 0.8s ease-out 0.55s both' }}>
               <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
               <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/5 to-transparent group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none skew-x-12"></div>
-              
+
               <div className="relative z-10 flex flex-col justify-between h-full gap-6">
                 <h3 className="text-xs font-bold tracking-widest text-fuchsia-400 uppercase">Professional Experience</h3>
                 <div>
@@ -235,12 +280,76 @@ export default function About() {
                     {skillGroup.items.map((skill, i) => (
                       <div
                         key={i}
-                        className="text-center flex items-center justify-center px-5 py-2.5 bg-white/5 border border-white/10 rounded-full text-xs md:text-sm font-medium text-neutral-300 hover:text-white hover:bg-white/20 hover:border-white/30 hover:scale-105 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(255,255,255,0.15)] transition-all duration-300 cursor-default"
+                        className="text-center flex items-center justify-center gap-2 px-5 py-2.5 bg-white/5 border border-white/10 rounded-full text-xs md:text-sm font-medium text-neutral-300 hover:text-white hover:bg-white/20 hover:border-white/30 hover:scale-105 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(255,255,255,0.15)] transition-all duration-300 cursor-default"
                       >
-                        {skill}
+                        {skill.icon}
+                        <span>{skill.name}</span>
                       </div>
                     ))}
                   </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Academic Journey Segment */}
+        <div id="education" className="flex flex-col gap-10" style={{ animation: 'fadeInUp 0.8s ease-out 1.0s both' }}>
+          
+          {/* Header */}
+          <div className="flex flex-col gap-4 mb-4">
+            <h2 className="font-sans text-5xl md:text-7xl font-black tracking-tighter text-primary uppercase drop-shadow-lg">
+              ACADEMIC JOURNEY
+            </h2>
+            <div className="w-24 h-1 bg-gradient-accent rounded-full"></div>
+          </div>
+
+          {/* Timeline List */}
+          <div className="flex flex-col border border-white/10 rounded-3xl overflow-hidden bg-neutral-900/40 backdrop-blur-md shadow-2xl">
+            {[
+              {
+                degree: "B.Tech in Artificial Intelligence & Data Science",
+                institution: "VESIT, Mumbai",
+                score: "9.63 / 10 CGPA\n(Upto Sem 4)",
+                timeline: "Aug 2024 — Present"
+              },
+              {
+                degree: "Higher Secondary Certificate (HSC)",
+                institution: "B.N. Bandodkar College, Thane",
+                score: "86.67%",
+                timeline: "Jun 2022 — Apr 2024"
+              },
+              {
+                degree: "Secondary School Certificate (SSC)",
+                institution: "A.K. Joshi English High School, Thane",
+                score: "94.00%",
+                timeline: "Jun 2012 — Apr 2022"
+              }
+            ].map((edu, idx) => (
+              <div 
+                key={idx} 
+                className="group relative p-6 md:p-8 border-b border-white/10 last:border-b-0 hover:bg-white/[0.04] transition-all duration-300 flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-8"
+              >
+                {/* Column 1: Degree & Institution */}
+                <div className="flex flex-col gap-2 flex-1 min-w-[200px] md:max-w-[45%]">
+                  <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-fuchsia-400 transition-colors">
+                    {edu.degree}
+                  </h3>
+                  <p className="text-sm md:text-base text-neutral-400">{edu.institution}</p>
+                </div>
+                
+                {/* Column 2: Score / Marks */}
+                <div className="flex-1 flex justify-start md:justify-center min-w-[120px]">
+                  <span className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 whitespace-pre-line text-center leading-tight">
+                    {edu.score}
+                  </span>
+                </div>
+                
+                {/* Column 3: Timeline */}
+                <div className="flex-1 flex justify-start md:justify-end min-w-[150px]">
+                  <span className="text-sm font-bold tracking-widest text-transparent bg-clip-text bg-gradient-accent uppercase whitespace-nowrap">
+                    {edu.timeline}
+                  </span>
                 </div>
               </div>
             ))}
