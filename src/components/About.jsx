@@ -1,4 +1,4 @@
-import { Brain, Bot, Network, BarChart, LineChart, MessageSquare, BookOpen, Search, Eye, Server, Cpu, Layers, Code, Shield, Lock, Terminal, ShieldAlert } from 'lucide-react';
+import { Brain, Bot, Network, BarChart, LineChart, MessageSquare, BookOpen, Search, Eye, Server, Cpu, Layers, Code, Lock, Terminal, ShieldAlert } from 'lucide-react';
 import { FaPython, FaJava, FaReact, FaHtml5, FaGitAlt, FaGithub, FaFigma, FaDatabase, FaCss3Alt } from 'react-icons/fa';
 import { SiJavascript, SiDart, SiFlutter, SiPandas, SiNumpy, SiFastapi, SiScikitlearn, SiStreamlit, SiGooglecolab } from 'react-icons/si';
 
