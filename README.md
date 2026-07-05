@@ -59,12 +59,33 @@ I am an undergraduate student pursuing Artificial Intelligence and Data Science 
 
 ---
 
+## 🚀 Key Projects
+
+### **[Email Spam Detection System](https://email-spam-detection-kxqfedblnguuabikvmhmtb.streamlit.app/)**
+* Engineered a highly accurate **(97%)** binary classification model using **TF-IDF vectorization** and **Logistic Regression**.
+* Built and deployed a live, real-time text prediction interface using **Streamlit**, allowing users to test emails instantly.
+
+### **[Prashikshan NEP Platform](https://github.com/harshalnnpednekar/SIH-Prashikshan-NEP)**
+* Developed a multi-role data management platform designed for tracking metrics, automated logbook monitoring, and compliance analytics.
+* Architected a streamlined full-stack solution utilizing a **React and Node.js** stack, emphasizing responsive design and secure role-based access.
+
+---
+
 ## 🏆 Achievements & Awards
 
 * 🥉 **3rd Position Nationally** — Zerve AI Datathon 2025 *(Hosted at Techfest, IIT Bombay)*  
   *Recognized for rapid dataset analysis, high-frequency feature extraction, and building highly accurate predictive models under strict time constraints.*
 * 🏁 **1x National Hackathon Finalist** — PU Code Hackathon 3.0 *(National Level, Vadodara)*  
   *Achieved a national-level finals appearance, demonstrating strong rapid prototyping, problem-solving, and team execution capabilities.*
+
+---
+
+## 📜 Certifications
+
+* **HackerRank:** 4 Star Badge in Python
+* **IBM:** AI Literacy, AI Fundamentals: Foundations for Understanding AI, AI Fundamentals: Language and Vision in AI
+* **Udemy:** Data Science, Machine Learning, DL and NLP Bootcamp, Ethical Hacking and Penetration Testing
+* **Oracle:** Artificial Intelligence and Machine Learning in Java
 
 ---
 
