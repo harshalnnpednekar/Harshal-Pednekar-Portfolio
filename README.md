@@ -61,6 +61,9 @@ I am an undergraduate student pursuing Artificial Intelligence and Data Science 
 
 ## 🚀 Key Projects
 
+### **[Nexus Developer Onboarding Agent](https://github.com/harshalnnpednekar/Nexus-Developer-Onboarding-Agent)**
+* Enterprise-grade autonomous onboarding platform that accelerates engineering integration by dynamically adapting learning paths and resources based on real-time technical proficiency and cognitive metrics.
+
 ### **[Email Spam Detection System](https://email-spam-detection-kxqfedblnguuabikvmhmtb.streamlit.app/)**
 * Engineered a highly accurate **(97%)** binary classification model using **TF-IDF vectorization** and **Logistic Regression**.
 * Built and deployed a live, real-time text prediction interface using **Streamlit**, allowing users to test emails instantly.

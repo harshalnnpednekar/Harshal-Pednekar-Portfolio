@@ -2,6 +2,14 @@ export default function Projects() {
   const projects = [
     {
       index: "01",
+      category: "AI PLATFORM · ENTERPRISE",
+      title: "Nexus Developer Onboarding Agent",
+      description: "Enterprise-grade autonomous onboarding platform that accelerates engineering integration by dynamically adapting learning paths and resources based on real-time technical proficiency and cognitive metrics.",
+      link: "https://github.com/harshalnnpednekar/Nexus-Developer-Onboarding-Agent",
+      image: "/Nexus.png",
+    },
+    {
+      index: "02",
       category: "MACHINE LEARNING · NLP",
       title: "Email Spam Detection System",
       description: "Engineered a 97% accuracy binary classification model using TF-IDF vectorization and Logistic Regression, featuring a live real-time text prediction Streamlit interface.",
@@ -9,7 +17,7 @@ export default function Projects() {
       image: "/email-spam.png.png",
     },
     {
-      index: "02",
+      index: "03",
       category: "FULL STACK WEB",
       title: "Prashikshan NEP Platform",
       description: "Developed a multi-role data management platform for tracking metrics, automated logbook monitoring, and compliance analytics using a streamlined React/Node stack.",
