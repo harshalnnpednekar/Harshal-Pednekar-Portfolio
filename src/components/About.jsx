@@ -1,6 +1,6 @@
 import { Brain, Bot, Network, BarChart, LineChart, MessageSquare, BookOpen, Search, Eye, Server, Cpu, Layers, Code, Lock, Terminal, ShieldAlert } from 'lucide-react';
-import { FaPython, FaJava, FaReact, FaHtml5, FaGitAlt, FaGithub, FaFigma, FaDatabase, FaCss3Alt } from 'react-icons/fa';
-import { SiJavascript, SiDart, SiFlutter, SiPandas, SiNumpy, SiFastapi, SiScikitlearn, SiStreamlit, SiGooglecolab } from 'react-icons/si';
+import { FaPython, FaJava, FaReact, FaHtml5, FaGitAlt, FaGithub, FaFigma, FaDatabase, FaCss3Alt, FaNodeJs } from 'react-icons/fa';
+import { SiJavascript, SiDart, SiFlutter, SiPandas, SiNumpy, SiFastapi, SiScikitlearn, SiStreamlit, SiGooglecolab, SiPytorch } from 'react-icons/si';
 
 export default function About() {
   const skills = [
@@ -34,15 +34,17 @@ export default function About() {
     {
       category: "FRAMEWORKS & LIBRARIES",
       items: [
-        { name: "FastAPI", icon: <SiFastapi size={16} className="text-emerald-400" /> },
-        { name: "Scikit-learn", icon: <SiScikitlearn size={16} className="text-orange-400" /> },
         { name: "React.js", icon: <FaReact size={16} className="text-cyan-400" /> },
         { name: "Flutter", icon: <SiFlutter size={16} className="text-cyan-400" /> },
+        { name: "FastAPI", icon: <SiFastapi size={16} className="text-emerald-400" /> },
+        { name: "Node.js", icon: <FaNodeJs size={16} className="text-green-500" /> },
         { name: "Pandas", icon: <SiPandas size={16} className="text-indigo-400" /> },
         { name: "NumPy", icon: <SiNumpy size={16} className="text-blue-500" /> },
         { name: "Matplotlib", icon: <BarChart size={16} className="text-orange-300" /> },
         { name: "Seaborn", icon: <LineChart size={16} className="text-blue-300" /> },
-        { name: "Catboost", icon: <Bot size={16} className="text-yellow-300" /> }
+        { name: "Scikit-learn", icon: <SiScikitlearn size={16} className="text-orange-400" /> },
+        { name: "Catboost", icon: <Bot size={16} className="text-yellow-300" /> },
+        { name: "PyTorch", icon: <SiPytorch size={16} className="text-orange-500" /> }
       ],
     },
     {
@@ -219,24 +221,6 @@ export default function About() {
               </div>
             </div>
 
-            {/* Professional Experience Block */}
-            <div className="md:col-span-3 group relative p-8 rounded-3xl border border-white/10 bg-white/10 backdrop-blur-md overflow-hidden hover:border-white/30 hover:-translate-y-2 transition-all duration-500 shadow-2xl cursor-default" style={{ animation: 'fadeInUp 0.8s ease-out 0.55s both' }}>
-              <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
-              <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/5 to-transparent group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none skew-x-12"></div>
-
-              <div className="relative z-10 flex flex-col justify-between h-full gap-6">
-                <h3 className="text-xs font-bold tracking-widest text-fuchsia-400 uppercase">Professional Experience</h3>
-                <div>
-                  <h4 className="text-lg md:text-xl font-bold text-white mb-2 flex items-center gap-3">
-                    <span className="text-xl">🔬</span> Data Analytics Intern · Tata GenAI Powered Platform (Virtual)
-                  </h4>
-                  <ul className="text-sm md:text-base text-neutral-400 leading-relaxed list-disc list-outside ml-10 mt-4 space-y-2">
-                    <li>Leveraged Generative AI architectures for complex data cleaning configurations and exploratory data analysis (EDA).</li>
-                    <li>Synthesized business trend datasets to formulate strategic visual dashboards for corporate insight groups.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
 
             {/* Achievements Blocks */}
             <div className="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6" style={{ animation: 'fadeInUp 0.8s ease-out 0.6s both' }}>

@@ -33,6 +33,7 @@ const NAV_LINKS = [
   { label: "ABOUT", id: "about" },
   { label: "SKILLS", id: "skills" },
   { label: "ACADEMICS", id: "education" },
+  { label: "INTERNSHIP", id: "internship" },
   { label: "CERTIFICATIONS", id: "certifications" },
   { label: "PROJECTS", id: "projects" },
   { label: "CONTACT", id: "contact" }
