@@ -1,6 +1,7 @@
-import { Brain, Bot, Network, BarChart, LineChart, MessageSquare, BookOpen, Search, Eye, Server, Cpu, Layers, Code, Lock, Terminal, ShieldAlert } from 'lucide-react';
-import { FaPython, FaJava, FaReact, FaHtml5, FaGitAlt, FaGithub, FaFigma, FaDatabase, FaCss3Alt, FaNodeJs } from 'react-icons/fa';
+import { Brain, Bot, Network, BarChart, LineChart, MessageSquare, BookOpen, Search, Eye, Server, Cpu, Layers, Code, Lock, Terminal, ShieldAlert, Link, Sparkles } from 'lucide-react';
+import { FaPython, FaJava, FaReact, FaHtml5, FaGitAlt, FaGithub, FaFigma, FaDatabase, FaCss3Alt, FaNodeJs, FaMicrosoft } from 'react-icons/fa';
 import { SiJavascript, SiDart, SiFlutter, SiPandas, SiNumpy, SiFastapi, SiScikitlearn, SiStreamlit, SiGooglecolab, SiPytorch } from 'react-icons/si';
+import Achievements from './Achievements';
 
 export default function About() {
   const skills = [
@@ -32,12 +33,8 @@ export default function About() {
       ],
     },
     {
-      category: "FRAMEWORKS & LIBRARIES",
+      category: "LIBRARIES",
       items: [
-        { name: "React.js", icon: <FaReact size={16} className="text-cyan-400" /> },
-        { name: "Flutter", icon: <SiFlutter size={16} className="text-cyan-400" /> },
-        { name: "FastAPI", icon: <SiFastapi size={16} className="text-emerald-400" /> },
-        { name: "Node.js", icon: <FaNodeJs size={16} className="text-green-500" /> },
         { name: "Pandas", icon: <SiPandas size={16} className="text-indigo-400" /> },
         { name: "NumPy", icon: <SiNumpy size={16} className="text-blue-500" /> },
         { name: "Matplotlib", icon: <BarChart size={16} className="text-orange-300" /> },
@@ -67,6 +64,26 @@ export default function About() {
         { name: "Database Management Systems", icon: <Server size={16} className="text-blue-400" /> },
         { name: "Operating Systems", icon: <Cpu size={16} className="text-purple-400" /> },
         { name: "Object-Oriented Programming", icon: <Code size={16} className="text-orange-400" /> }
+      ],
+    },
+    {
+      category: "FRAMEWORKS",
+      items: [
+        { name: "React.js", icon: <FaReact size={16} className="text-cyan-400" /> },
+        { name: "Flutter", icon: <SiFlutter size={16} className="text-cyan-400" /> },
+        { name: "FastAPI", icon: <SiFastapi size={16} className="text-emerald-400" /> },
+        { name: "Node.js", icon: <FaNodeJs size={16} className="text-green-500" /> },
+        { name: "LangChain", icon: <Link size={16} className="text-white" /> },
+        { name: "LangGraph", icon: <Network size={16} className="text-white" /> }
+      ],
+    },
+    {
+      category: "AI MODELS & ASSISTANTS",
+      items: [
+        { name: "ChatGPT (OpenAI)", icon: <Bot size={16} className="text-emerald-400" /> },
+        { name: "Gemini (Google)", icon: <Sparkles size={16} className="text-blue-400" /> },
+        { name: "Claude (Anthropic)", icon: <Brain size={16} className="text-orange-400" /> },
+        { name: "Copilot (Microsoft)", icon: <FaMicrosoft size={16} className="text-blue-400" /> }
       ],
     },
     {
@@ -222,30 +239,6 @@ export default function About() {
             </div>
 
 
-            {/* Achievements Blocks */}
-            <div className="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6" style={{ animation: 'fadeInUp 0.8s ease-out 0.6s both' }}>
-              <div className="group relative p-6 md:p-8 rounded-3xl border border-white/10 bg-gradient-to-r from-neutral-800 to-neutral-900 backdrop-blur-md overflow-hidden hover:border-fuchsia-500/50 hover:-translate-y-2 transition-all duration-500 shadow-2xl cursor-default">
-                <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
-                <div className="relative z-10 flex items-start gap-4 md:gap-6">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-fuchsia-500/10 border border-fuchsia-500/20 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-500">🏆</div>
-                  <div>
-                    <h4 className="text-xl font-bold text-white mb-2 group-hover:text-fuchsia-400 transition-colors">1x Datathon Winner</h4>
-                    <p className="text-sm text-neutral-400 leading-relaxed">Secured 3rd Position nationally against elite talent at the prestigious Zerve AI Datathon 2025, Techfest, IIT Bombay.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="group relative p-6 md:p-8 rounded-3xl border border-white/10 bg-gradient-to-r from-neutral-800 to-neutral-900 backdrop-blur-md overflow-hidden hover:border-indigo-500/50 hover:-translate-y-2 transition-all duration-500 shadow-2xl cursor-default">
-                <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
-                <div className="relative z-10 flex items-start gap-4 md:gap-6">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-500">💻</div>
-                  <div>
-                    <h4 className="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">1x Hackathon Finalist</h4>
-                    <p className="text-sm text-neutral-400 leading-relaxed">Recognized for rapid prototyping and innovative problem-solving, securing a top finish at the national-level PU Code Hackathon 3.0.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
 
           </div>
         </div>
@@ -290,7 +283,7 @@ export default function About() {
               >
                 {/* Column 1: Degree & Institution */}
                 <div className="flex flex-col gap-2 flex-1 min-w-[200px] md:max-w-[45%]">
-                  <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-fuchsia-400 transition-colors">
+                  <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-white transition-colors">
                     {edu.degree}
                   </h3>
                   <p className="text-sm md:text-base text-neutral-400">{edu.institution}</p>
@@ -301,14 +294,14 @@ export default function About() {
                   
                   {/* Column 2: Score / Marks */}
                   <div className="flex-1 flex justify-start md:justify-center min-w-[120px]">
-                    <span className="inline-flex items-center px-4 py-1.5 md:px-5 md:py-2 bg-white/5 border border-fuchsia-500/20 md:border-white/10 rounded-full text-xs md:text-sm font-medium text-neutral-300 whitespace-pre-line text-center leading-tight transition-all duration-300 hover:bg-fuchsia-500/20 hover:border-fuchsia-400/50 md:hover:border-fuchsia-400/50 hover:text-white hover:scale-110 hover:shadow-[0_0_20px_rgba(217,70,239,0.5)] cursor-default">
+                    <span className="inline-flex items-center px-4 py-1.5 md:px-5 md:py-2 bg-white/5 border border-white/20 rounded-full text-xs md:text-sm font-medium text-neutral-300 whitespace-pre-line text-center leading-tight transition-all duration-300 hover:bg-white/10 hover:border-white/50 hover:text-white hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] cursor-default">
                       {edu.score}
                     </span>
                   </div>
                   
                   {/* Column 3: Timeline */}
                   <div className="flex-1 flex justify-end min-w-[150px]">
-                    <span className="inline-flex items-center px-4 py-1.5 md:px-5 md:py-2 bg-white/5 border border-fuchsia-500/20 md:border-white/10 rounded-full text-xs md:text-sm font-bold tracking-widest text-fuchsia-400 md:text-white uppercase whitespace-nowrap transition-all duration-300 hover:bg-fuchsia-500/20 hover:border-fuchsia-400/50 md:hover:border-fuchsia-400/50 hover:text-white hover:scale-110 hover:shadow-[0_0_20px_rgba(217,70,239,0.5)] cursor-default">
+                    <span className="inline-flex items-center px-4 py-1.5 md:px-5 md:py-2 bg-white/5 border border-white/20 rounded-full text-xs md:text-sm font-bold tracking-widest text-white uppercase whitespace-nowrap transition-all duration-300 hover:bg-white/10 hover:border-white/50 hover:text-white hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] cursor-default">
                       {edu.timeline}
                     </span>
                   </div>
@@ -341,7 +334,7 @@ export default function About() {
                     <span className="w-8 h-px bg-fuchsia-500/50"></span>
                     {skillGroup.category}
                   </h3>
-                  <div className="relative z-10 flex flex-wrap justify-center gap-3">
+                  <div className={`relative z-10 flex flex-wrap justify-center gap-3 ${skillGroup.category === "AI MODELS & ASSISTANTS" ? "max-w-[400px] mx-auto" : ""}`}>
                     {skillGroup.items.map((skill, i) => (
                       <div
                         key={i}
@@ -358,7 +351,10 @@ export default function About() {
           </div>
         </div>
 
-        {/* Certifications & Achievements Segment */}
+        {/* Achievements Segment */}
+        <Achievements />
+
+        {/* Certifications Segment */}
         <div id="certifications" className="flex flex-col gap-10">
           
           {/* Header */}

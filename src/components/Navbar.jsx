@@ -31,10 +31,11 @@ const XIcon = ({ className }) => (
 
 const NAV_LINKS = [
   { label: "ABOUT", id: "about" },
-  { label: "SKILLS", id: "skills" },
   { label: "ACADEMICS", id: "education" },
-  { label: "INTERNSHIP", id: "internship" },
+  { label: "SKILLS", id: "skills" },
+  { label: "ACHIEVEMENTS", id: "achievements" },
   { label: "CERTIFICATIONS", id: "certifications" },
+  { label: "INTERNSHIP", id: "internship" },
   { label: "PROJECTS", id: "projects" },
   { label: "CONTACT", id: "contact" }
 ];
@@ -60,7 +61,7 @@ export default function Navbar() {
 
   return (
     <div className="absolute top-0 left-0 right-0 z-50 flex justify-center mt-6 px-4">
-      <nav className="w-full max-w-6xl backdrop-blur-xl bg-white/5 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)] rounded-2xl px-6 py-4 flex items-center justify-between transition-all duration-500 hover:bg-white/10 hover:border-fuchsia-500/20 hover:shadow-[0_10px_40px_rgba(217,70,239,0.15)] hover:-translate-y-1 relative" ref={mobileMenuRef}>
+      <nav className="w-full max-w-[95%] xl:max-w-7xl backdrop-blur-xl bg-white/5 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)] rounded-2xl px-4 md:px-6 py-4 flex items-center justify-between transition-all duration-500 hover:bg-white/10 hover:border-fuchsia-500/20 hover:shadow-[0_10px_40px_rgba(217,70,239,0.15)] hover:-translate-y-1 relative" ref={mobileMenuRef}>
         
         {/* Logo */}
         <div className="flex items-center gap-2">
@@ -70,7 +71,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Links */}
-        <ul className="hidden lg:flex items-center gap-6 2xl:gap-8 text-xs xl:text-sm tracking-wider font-sans font-semibold text-subtext whitespace-nowrap">
+        <ul className="hidden lg:flex items-center gap-3 xl:gap-5 2xl:gap-8 text-[10px] xl:text-xs 2xl:text-sm tracking-wider font-sans font-semibold text-subtext whitespace-nowrap">
           {NAV_LINKS.map((link) => (
             <li key={link.id}>
               <a

@@ -40,7 +40,7 @@ export default function Hero() {
               style={{ animation: `fadeInUp 0.8s ease-out ${index * 0.15 + 0.3}s both` }}
             >
               <div
-                className="group relative flex items-center gap-4 px-5 py-2.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md hover:bg-white/15 hover:border-white/30 hover:scale-105 hover:translate-x-2 hover:shadow-[0_4px_20px_rgba(255,255,255,0.1)] transition-all duration-500 cursor-default"
+                className="group relative flex items-center gap-4 px-5 py-2.5 rounded-full border border-white/30 bg-white/5 backdrop-blur-md hover:bg-white/15 hover:border-white/60 hover:scale-105 hover:translate-x-2 hover:shadow-[0_4px_20px_rgba(255,255,255,0.2)] transition-all duration-500 cursor-default"
               >
                 {/* Glowing Indicator Dot */}
                 <div className="relative flex items-center justify-center">
