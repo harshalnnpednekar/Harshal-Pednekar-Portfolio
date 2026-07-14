@@ -62,7 +62,7 @@ export default function Navbar() {
   return (
     <div className="absolute top-0 left-0 right-0 z-50 flex justify-center mt-6 px-4">
       <nav className="w-full max-w-[95%] xl:max-w-7xl backdrop-blur-xl bg-white/5 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)] rounded-2xl px-4 md:px-6 py-4 flex items-center justify-between transition-all duration-500 hover:bg-white/10 hover:border-fuchsia-500/20 hover:shadow-[0_10px_40px_rgba(217,70,239,0.15)] hover:-translate-y-1 relative" ref={mobileMenuRef}>
-        
+
         {/* Logo */}
         <div className="flex items-center gap-2">
           <a href="/" className="w-8 h-8 rounded-full bg-gradient-accent flex items-center justify-center font-sans font-bold text-sm text-white hover:scale-110 hover:shadow-[0_0_20px_rgba(217,70,239,0.6)] transition-all duration-300 pt-[2px]">
@@ -86,9 +86,9 @@ export default function Navbar() {
 
         {/* Right Actions & Mobile Toggle */}
         <div className="flex items-center gap-3 md:gap-4">
-          
+
           <div className="relative" ref={dropdownRef}>
-            <button 
+            <button
               onClick={() => setShowResumeOptions(!showResumeOptions)}
               className="group relative flex items-center justify-center px-4 md:px-6 py-2 rounded-full bg-neutral-950 border border-neutral-900 hover:border-fuchsia-500/50 hover:shadow-[0_0_20px_rgba(217,70,239,0.3)] hover:-translate-y-0.5 hover:scale-105 transition-all duration-300 overflow-hidden cursor-pointer"
             >
@@ -97,13 +97,13 @@ export default function Navbar() {
                 RESUME
               </span>
             </button>
-            
+
             {/* Dropdown Options */}
             <div className={`absolute right-0 mt-3 w-32 rounded-xl bg-neutral-900 border border-neutral-800 shadow-2xl flex flex-col overflow-hidden transition-all duration-300 origin-top-right ${showResumeOptions ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
-              <a href="/Resume%20HP.pdf" target="_blank" onClick={() => setShowResumeOptions(false)} className="px-4 py-3 text-xs font-bold tracking-widest text-neutral-300 hover:bg-neutral-800 hover:text-white transition-colors text-center border-b border-neutral-800/50">
+              <a href="/Resume.pdf" target="_blank" onClick={() => setShowResumeOptions(false)} className="px-4 py-3 text-xs font-bold tracking-widest text-neutral-300 hover:bg-neutral-800 hover:text-white transition-colors text-center border-b border-neutral-800/50">
                 VIEW
               </a>
-              <a href="/Resume%20HP.pdf" download="Resume HP.pdf" onClick={() => setShowResumeOptions(false)} className="px-4 py-3 text-xs font-bold tracking-widest text-neutral-300 hover:bg-neutral-800 hover:text-white transition-colors text-center">
+              <a href="/Resume.pdf" download="Resume.pdf" onClick={() => setShowResumeOptions(false)} className="px-4 py-3 text-xs font-bold tracking-widest text-neutral-300 hover:bg-neutral-800 hover:text-white transition-colors text-center">
                 DOWNLOAD
               </a>
             </div>
@@ -127,9 +127,9 @@ export default function Navbar() {
             <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
             <LinkedinIcon className="w-4 h-4 text-primary group-hover:text-[#0077b5] group-hover:-rotate-12 group-hover:scale-125 transition-all duration-300 relative z-10" />
           </a>
-          
+
           {/* Mobile Menu Toggle Button */}
-          <button 
+          <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full bg-neutral-950 border border-neutral-900 text-white hover:bg-neutral-900 transition-colors"
           >

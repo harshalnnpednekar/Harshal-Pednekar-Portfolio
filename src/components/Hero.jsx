@@ -7,7 +7,7 @@ export default function Hero() {
         <img
           src="/Photo_wide.png"
           alt="Harshal Pednekar Avatar"
-          className="w-full h-full object-cover object-[center_18%] opacity-100 brightness-[1.60] contrast-[1.10] saturate-[1.15]"
+          className="w-full h-full object-cover object-[80%_15%] md:object-[center_18%] opacity-100 brightness-[1.60] contrast-[1.10] saturate-[1.15]"
         />
       </div>
 
