@@ -8,15 +8,15 @@ export default function About() {
     {
       category: "AI, ML & DATA SCIENCE",
       items: [
-        { name: "Generative AI", icon: <Brain size={16} className="text-pink-400" /> },
-        { name: "Machine Learning", icon: <Bot size={16} className="text-indigo-400" /> },
-        { name: "AI Agents", icon: <Network size={16} className="text-purple-400" /> },
+        { name: "Generative AI", icon: <Brain size={16} className="text-cyan-400" /> },
+        { name: "Machine Learning", icon: <Bot size={16} className="text-cyan-400" /> },
+        { name: "AI Agents", icon: <Network size={16} className="text-teal-400" /> },
         { name: "Data Science", icon: <BarChart size={16} className="text-emerald-400" /> },
         { name: "Data Analytics", icon: <LineChart size={16} className="text-blue-400" /> },
-        { name: "Natural Language Processing (NLP)", icon: <MessageSquare size={16} className="text-fuchsia-400" /> },
+        { name: "Natural Language Processing (NLP)", icon: <MessageSquare size={16} className="text-teal-400" /> },
         { name: "Large Language Models (LLMs)", icon: <BookOpen size={16} className="text-orange-400" /> },
         { name: "Retrieval-Augmented Generation (RAG)", icon: <Search size={16} className="text-cyan-400" /> },
-        { name: "Deep Learning", icon: <Network size={16} className="text-rose-400" /> },
+        { name: "Deep Learning", icon: <Network size={16} className="text-emerald-400" /> },
         { name: "Computer Vision", icon: <Eye size={16} className="text-teal-400" /> }
       ],
     },
@@ -26,7 +26,7 @@ export default function About() {
         { name: "Python", icon: <FaPython size={16} className="text-blue-400" /> },
         { name: "Java (OOP)", icon: <FaJava size={16} className="text-orange-400" /> },
         { name: "Dart", icon: <SiDart size={16} className="text-cyan-400" /> },
-        { name: "SQL", icon: <FaDatabase size={16} className="text-purple-400" /> },
+        { name: "SQL", icon: <FaDatabase size={16} className="text-teal-400" /> },
         { name: "HTML", icon: <FaHtml5 size={16} className="text-orange-500" /> },
         { name: "CSS", icon: <FaCss3Alt size={16} className="text-blue-500" /> },
         { name: "JavaScript", icon: <SiJavascript size={16} className="text-yellow-400" /> }
@@ -35,7 +35,7 @@ export default function About() {
     {
       category: "LIBRARIES",
       items: [
-        { name: "Pandas", icon: <SiPandas size={16} className="text-indigo-400" /> },
+        { name: "Pandas", icon: <SiPandas size={16} className="text-cyan-400" /> },
         { name: "NumPy", icon: <SiNumpy size={16} className="text-blue-500" /> },
         { name: "Matplotlib", icon: <BarChart size={16} className="text-orange-300" /> },
         { name: "Seaborn", icon: <LineChart size={16} className="text-blue-300" /> },
@@ -51,9 +51,9 @@ export default function About() {
         { name: "GitHub", icon: <FaGithub size={16} /> },
         { name: "Streamlit", icon: <SiStreamlit size={16} className="text-red-400" /> },
         { name: "Google Colab", icon: <SiGooglecolab size={16} className="text-orange-400" /> },
-        { name: "Figma", icon: <FaFigma size={16} className="text-pink-400" /> },
+        { name: "Figma", icon: <FaFigma size={16} className="text-cyan-400" /> },
         { name: "Stitch", icon: <Layers size={16} className="text-blue-400" /> },
-        { name: "Google AI Studio", icon: <Brain size={16} className="text-indigo-400" /> },
+        { name: "Google AI Studio", icon: <Brain size={16} className="text-cyan-400" /> },
         { name: "Canva", icon: <Layers size={16} className="text-cyan-400" /> }
       ],
     },
@@ -62,7 +62,7 @@ export default function About() {
       items: [
         { name: "Data Structures & Algorithms", icon: <Layers size={16} className="text-emerald-400" /> },
         { name: "Database Management Systems", icon: <Server size={16} className="text-blue-400" /> },
-        { name: "Operating Systems", icon: <Cpu size={16} className="text-purple-400" /> },
+        { name: "Operating Systems", icon: <Cpu size={16} className="text-teal-400" /> },
         { name: "Object-Oriented Programming", icon: <Code size={16} className="text-orange-400" /> }
       ],
     },
@@ -103,8 +103,8 @@ export default function About() {
     <section id="about" className="w-full bg-black pt-12 pb-16 px-4 relative overflow-hidden">
 
       {/* Immersive Background Glow */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-fuchsia-900/10 rounded-full blur-[150px] pointer-events-none"></div>
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-indigo-900/10 rounded-full blur-[150px] pointer-events-none"></div>
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-teal-900/10 rounded-full blur-[150px] pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan-900/10 rounded-full blur-[150px] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto flex flex-col gap-20 relative z-10">
 
@@ -133,7 +133,7 @@ export default function About() {
               <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/5 to-transparent group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none skew-x-12"></div>
 
               <div className="relative z-10 flex flex-col justify-start h-full gap-6">
-                <h3 className="text-xs font-bold tracking-widest text-fuchsia-400 uppercase">Education & Academics</h3>
+                <h3 className="text-xs font-bold tracking-widest text-teal-400 uppercase">Education & Academics</h3>
                 <div>
                   <h4 className="text-2xl md:text-3xl font-bold text-white mb-2">B.Tech in Artificial Intelligence & Data Science</h4>
                   <p className="text-lg text-neutral-400">Vivekanand Education Society's Institute of Technology (VESIT)</p>
@@ -159,7 +159,7 @@ export default function About() {
                   </div>
 
                   {/* Row 2: The Overall CGPA */}
-                  <div className="relative flex items-center justify-between p-5 md:p-6 bg-gradient-to-r from-fuchsia-900/20 to-indigo-900/20 border border-white/10 rounded-2xl hover:border-fuchsia-500/50 transition-all duration-500 overflow-hidden w-full group/cgpa" style={{ animation: `fadeInUp 0.6s ease-out 0.7s both` }}>
+                  <div className="relative flex items-center justify-between p-5 md:p-6 bg-gradient-to-r from-teal-900/20 to-cyan-900/20 border border-white/10 rounded-2xl hover:border-teal-500/50 transition-all duration-500 overflow-hidden w-full group/cgpa" style={{ animation: `fadeInUp 0.6s ease-out 0.7s both` }}>
                     <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover/cgpa:opacity-10 transition-opacity duration-500"></div>
                     <div className="relative z-10 flex flex-col">
                       <span className="text-xs md:text-sm font-bold text-white uppercase tracking-wider">Cumulative Grade Point</span>
@@ -178,22 +178,22 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
               <div className="relative z-10 h-full flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xs font-bold tracking-widest text-indigo-400 uppercase mb-6">Core Philosophy</h3>
+                  <h3 className="text-xs font-bold tracking-widest text-cyan-400 uppercase mb-6">Core Philosophy</h3>
                   <h4 className="text-white font-bold text-base mb-3">Engineering Intelligence</h4>
                   <p className="text-sm text-neutral-400 leading-relaxed mb-6">
                     Transforming raw data into actionable insights and building scalable, user-centric applications. My focus lies at the intersection of applied machine learning, advanced LLM architectures, and robust full-stack development to solve real-world challenges.
                   </p>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
-                      <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></div>
+                      <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-cyan-500 flex-shrink-0"></div>
                       <span className="text-sm text-neutral-400"><span className="text-white font-semibold">Data-Driven:</span> Emphasizing mathematical rigor over pure intuition.</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-fuchsia-500 flex-shrink-0"></div>
+                      <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-500 flex-shrink-0"></div>
                       <span className="text-sm text-neutral-400"><span className="text-white font-semibold">Scalable Architectures:</span> Designing systems built for long-term growth.</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-purple-500 flex-shrink-0"></div>
+                      <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-500 flex-shrink-0"></div>
                       <span className="text-sm text-neutral-400"><span className="text-white font-semibold">User-Centric:</span> Ensuring deep tech serves human needs seamlessly.</span>
                     </li>
                   </ul>
@@ -205,7 +205,7 @@ export default function About() {
             <div className="md:col-span-1 group relative p-8 rounded-3xl border border-white/10 bg-white/10 backdrop-blur-md overflow-hidden hover:border-white/30 hover:-translate-y-2 transition-all duration-500 shadow-2xl cursor-default" style={{ animation: 'fadeInUp 0.8s ease-out 0.4s both' }}>
               <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
               <div className="relative z-10">
-                <h3 className="text-xs font-bold tracking-widest text-fuchsia-400 uppercase mb-6">Technical Domains</h3>
+                <h3 className="text-xs font-bold tracking-widest text-teal-400 uppercase mb-6">Technical Domains</h3>
                 <div className="flex flex-col gap-4">
                   {["Artificial Intelligence", "Machine Learning", "Data Science", "Data Analysis", "Cyber Security"].map((domain, i) => (
                     <div key={i} className="flex items-center gap-3">
@@ -222,7 +222,7 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
               <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/5 to-transparent group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none skew-x-12"></div>
               <div className="relative z-10 h-full flex flex-col justify-between">
-                <h3 className="text-xs font-bold tracking-widest text-indigo-400 uppercase mb-6">Architectural Specializations</h3>
+                <h3 className="text-xs font-bold tracking-widest text-cyan-400 uppercase mb-6">Architectural Specializations</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {[
                     { title: "Predictive AI & ML", desc: "Building and optimizing machine learning pipelines, deep neural networks, and data models to drive data-informed decisions." },
@@ -331,7 +331,7 @@ export default function About() {
                 <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none"></div>
                 <div className="w-full">
                   <h3 className="relative z-10 text-xs md:text-sm font-bold tracking-widest text-transparent bg-clip-text bg-gradient-accent uppercase mb-8 flex items-center gap-3">
-                    <span className="w-8 h-px bg-fuchsia-500/50"></span>
+                    <span className="w-8 h-px bg-teal-500/50"></span>
                     {skillGroup.category}
                   </h3>
                   <div className={`relative z-10 flex flex-wrap justify-center gap-3 ${skillGroup.category === "AI MODELS & ASSISTANTS" ? "max-w-[400px] mx-auto" : ""}`}>
@@ -387,7 +387,7 @@ export default function About() {
               },
               {
                 issuer: "Udemy",
-                color: "text-purple-400",
+                color: "text-teal-400",
                 certs: [
                   { title: "Data Science, Machine Learning, DL and NLP Bootcamp", type: "Bootcamp" },
                   { title: "Ethical Hacking and Penetration Testing", type: "Certificate" }
@@ -421,7 +421,7 @@ export default function About() {
                       key={idx} 
                       className={`group relative p-5 border border-white/10 rounded-2xl bg-neutral-900/40 backdrop-blur-md shadow-xl hover:bg-white/[0.08] hover:border-white/20 transition-all duration-300 flex flex-col justify-center min-h-[90px] ${group.certs.length === 1 ? 'sm:col-span-2' : ''}`}
                     >
-                      <h4 className="text-base font-medium text-neutral-300 group-hover:text-fuchsia-400 transition-colors leading-snug text-center">
+                      <h4 className="text-base font-medium text-neutral-300 group-hover:text-teal-400 transition-colors leading-snug text-center">
                         {cert.title}
                       </h4>
                     </div>

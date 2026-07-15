@@ -43,7 +43,7 @@ export default function Internship() {
                     </div>
                     
                     {/* Company badge */}
-                    <div className="inline-flex items-center justify-center gap-2 w-fit px-3 sm:px-4 py-1 sm:py-1.5 rounded-full border border-white/10 bg-white/5 text-neutral-400 text-[10px] sm:text-sm font-semibold tracking-widest uppercase hover:text-white hover:bg-white/20 hover:border-fuchsia-400/30 hover:scale-105 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(217,70,239,0.25)] transition-all duration-300 cursor-default">
+                    <div className="inline-flex items-center justify-center gap-2 w-fit px-3 sm:px-4 py-1 sm:py-1.5 rounded-full border border-white/10 bg-white/5 text-neutral-400 text-[10px] sm:text-sm font-semibold tracking-widest uppercase hover:text-white hover:bg-white/20 hover:border-teal-400/30 hover:scale-105 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(217,70,239,0.25)] transition-all duration-300 cursor-default">
                       Tata Consultancy Services
                     </div>
                   </div>
@@ -55,13 +55,13 @@ export default function Internship() {
                 {/* Bottom: Points */}
                 <ul className="text-base md:text-lg text-neutral-400 leading-relaxed space-y-5">
                   <li className="flex items-start gap-4">
-                    <span className="text-fuchsia-400 mt-1 text-lg leading-none drop-shadow-[0_0_6px_rgba(217,70,239,0.6)]">✦</span>
+                    <span className="text-teal-400 mt-1 text-lg leading-none drop-shadow-[0_0_6px_rgba(217,70,239,0.6)]">✦</span>
                     <span className="group-hover:text-neutral-300 transition-colors duration-300">
                       Leveraged Generative AI architectures for complex data cleaning configurations and exploratory data analysis (EDA).
                     </span>
                   </li>
                   <li className="flex items-start gap-4">
-                    <span className="text-fuchsia-400 mt-1 text-lg leading-none drop-shadow-[0_0_6px_rgba(217,70,239,0.6)]">✦</span>
+                    <span className="text-teal-400 mt-1 text-lg leading-none drop-shadow-[0_0_6px_rgba(217,70,239,0.6)]">✦</span>
                     <span className="group-hover:text-neutral-300 transition-colors duration-300">
                       Synthesized business trend datasets to formulate strategic visual dashboards for corporate insight groups.
                     </span>

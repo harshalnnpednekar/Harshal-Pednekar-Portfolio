@@ -39,7 +39,7 @@ export default function Achievements() {
       {/* Timeline List */}
       <div className="flex flex-col gap-6 relative">
         {/* Vertical Line for Timeline (Desktop) */}
-        <div className="hidden md:block absolute left-[30px] top-10 bottom-10 w-0.5 bg-gradient-to-b from-fuchsia-500/50 via-indigo-500/50 to-transparent z-0" style={{ animation: 'fadeInUp 1.2s ease-out 0.2s both' }}></div>
+        <div className="hidden md:block absolute left-[30px] top-10 bottom-10 w-0.5 bg-gradient-to-b from-teal-500/50 via-cyan-500/50 to-transparent z-0" style={{ animation: 'fadeInUp 1.2s ease-out 0.2s both' }}></div>
 
         {achievements.map((item, idx) => (
           <div
@@ -73,7 +73,7 @@ export default function Achievements() {
                 </span>
               </div>
 
-              <h4 className="text-base md:text-lg font-semibold text-indigo-300">
+              <h4 className="text-base md:text-lg font-semibold text-cyan-300">
                 {item.event}
               </h4>
 

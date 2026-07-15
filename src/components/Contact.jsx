@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <footer id="contact" className="w-full bg-black pt-10 pb-6 px-4 border-t border-neutral-900 relative overflow-hidden">
       {/* Background ambient glow */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-64 bg-fuchsia-900/20 blur-[120px] rounded-full pointer-events-none"></div>
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-64 bg-teal-900/20 blur-[120px] rounded-full pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto flex flex-col items-center gap-16 relative z-10">
         

@@ -40,7 +40,7 @@ export default function Projects() {
           {projects.map((project, i) => (
             <div 
               key={i} 
-              className={`group sticky flex flex-col lg:flex-row items-stretch gap-8 lg:gap-16 w-full p-6 lg:p-12 bg-neutral-900/80 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl hover:bg-neutral-800/90 hover:border-fuchsia-500/30 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(217,70,239,0.15)] transition-all duration-500`}
+              className={`group sticky flex flex-col lg:flex-row items-stretch gap-8 lg:gap-16 w-full p-6 lg:p-12 bg-neutral-900/80 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl hover:bg-neutral-800/90 hover:border-teal-500/30 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(217,70,239,0.15)] transition-all duration-500`}
               style={{ top: `calc(7rem + ${i * 2}rem)` }}
             >
               

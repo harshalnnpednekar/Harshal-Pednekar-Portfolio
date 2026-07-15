@@ -61,7 +61,7 @@ export default function Navbar() {
 
   return (
     <div className="absolute top-0 left-0 right-0 z-50 flex justify-center mt-6 px-4">
-      <nav className="w-full max-w-[95%] xl:max-w-7xl backdrop-blur-xl bg-white/5 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)] rounded-2xl px-4 md:px-6 py-4 flex items-center justify-between transition-all duration-500 hover:bg-white/10 hover:border-fuchsia-500/20 hover:shadow-[0_10px_40px_rgba(217,70,239,0.15)] hover:-translate-y-1 relative" ref={mobileMenuRef}>
+      <nav className="w-full max-w-[95%] xl:max-w-7xl backdrop-blur-xl bg-white/5 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)] rounded-2xl px-4 md:px-6 py-4 flex items-center justify-between transition-all duration-500 hover:bg-white/10 hover:border-teal-500/20 hover:shadow-[0_10px_40px_rgba(217,70,239,0.15)] hover:-translate-y-1 relative" ref={mobileMenuRef}>
 
         {/* Logo */}
         <div className="flex items-center gap-2">
@@ -76,7 +76,7 @@ export default function Navbar() {
             <li key={link.id}>
               <a
                 href={`#${link.id}`}
-                className="inline-block hover:text-white transition-all duration-300 relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:rounded-full after:bg-fuchsia-500 after:transition-all after:duration-300 hover:after:w-full"
+                className="inline-block hover:text-white transition-all duration-300 relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:rounded-full after:bg-teal-500 after:transition-all after:duration-300 hover:after:w-full"
               >
                 {link.label}
               </a>
@@ -90,7 +90,7 @@ export default function Navbar() {
           <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setShowResumeOptions(!showResumeOptions)}
-              className="group relative flex items-center justify-center px-4 md:px-6 py-2 rounded-full bg-neutral-950 border border-neutral-900 hover:border-fuchsia-500/50 hover:shadow-[0_0_20px_rgba(217,70,239,0.3)] hover:-translate-y-0.5 hover:scale-105 transition-all duration-300 overflow-hidden cursor-pointer"
+              className="group relative flex items-center justify-center px-4 md:px-6 py-2 rounded-full bg-neutral-950 border border-neutral-900 hover:border-teal-500/50 hover:shadow-[0_0_20px_rgba(217,70,239,0.3)] hover:-translate-y-0.5 hover:scale-105 transition-all duration-300 overflow-hidden cursor-pointer"
             >
               <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
               <span className="relative z-10 text-xs font-sans font-bold tracking-widest text-neutral-300 uppercase group-hover:text-white transition-colors duration-300">
