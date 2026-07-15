@@ -10,7 +10,7 @@
   <a href="https://www.linkedin.com/in/harshal-pednekar-066554361" target="_blank">
     <img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="Resume%20HP.pdf" target="_blank">
+  <a href="public/resume(1).pdf" target="_blank">
     <img src="https://img.shields.io/badge/RESUME-PDF-D14836?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Resume" />
   </a>
 </p>
@@ -23,39 +23,38 @@ I am an undergraduate student pursuing Artificial Intelligence and Data Science 
 <p align="center">
   <table align="center" width="100%">
     <tr>
-      <td align="center" width="25%">🎓 <strong>Degree & Institution</strong></td>
-      <td align="center" width="25%">📊 <strong>Academic Standing</strong></td>
-      <td align="center" width="25%">🏆 <strong>Datathon Track</strong></td>
-      <td align="center" width="25%">🏁 <strong>Hackathon Record</strong></td>
+      <td align="center" width="33%">🎓 <strong>B.Tech AI & Data Science</strong></td>
+      <td align="center" width="33%">📊 <strong>Current CGPA</strong></td>
+      <td align="center" width="33%">🏆 <strong>Top Achievements</strong></td>
     </tr>
     <tr>
-      <td align="center">B.Tech Undergraduate<br>Artificial Intelligence & Data Science<br><em>VESIT Mumbai</em></td>
-      <td align="center"><strong>9.63 CGPA</strong><br>(Upto Sem 4)<br><em>Top Tier</em></td>
-      <td align="center"><strong>3rd Position Nationally</strong><br>Zerve AI Datathon 2025<br><em>IIT Bombay Techfest</em></td>
-      <td align="center"><strong>1x National Finalist</strong><br>Forums & Prototyping<br><em>PU Code Hackathon 3.0</em></td>
+      <td align="center">VESIT, Mumbai<br><em>Aug 2024 — Present</em></td>
+      <td align="center"><strong>9.63 / 10</strong><br><em>(Up to Sem 4)</em></td>
+      <td align="center"><strong>3rd Position Nationally</strong><br><em>Zerve AI Datathon 2025</em></td>
     </tr>
   </table>
 </p>
 
 ---
 
-## 🛠️ Core Competencies & Domain Matrix
+## 🛠️ Core Competencies & Technical Skills
 
-| Category | Specialized Domains & Technical Frameworks |
+| Category | Skills & Technologies |
 | :--- | :--- |
-| **Generative AI & LLMs** | Retrieval-Augmented Generation (RAG) pipelines, Large Language Models (LLMs) fine-tuning, Multi-Agent systems, Prompt Engineering |
-| **Machine Learning** | End-to-end ML pipelines, Exploratory Data Analysis (EDA), Feature Engineering, Supervised Learning, Text Classification |
-| **Data Science & Analytics** | Unstructured dataset parsing, Statistical analysis, Interactive validation interfaces, Strategic data visualization dashboards |
-| **Deep Learning & NLP** | Neural Networks architecture, Convolutional Neural Networks (CNNs), Image Classification, Computer Vision, Transformer models, Natural Language Processing (NLP) |
-| **Software Development** | Cross-platform mobile development, AI model backend integration, FastAPI, React.js, Flutter, SQL, Git/GitHub |
+| **AI, ML & Data Science** | Generative AI, Machine Learning, AI Agents, Data Science, Data Analytics, NLP, LLMs, RAG, Deep Learning, Computer Vision |
+| **Languages** | Python, Java , Dart, SQL, HTML, CSS, JavaScript |
+| **Libraries** | Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Catboost, PyTorch |
+| **Tools & Infrastructure** | Git, GitHub, Streamlit, Google Colab, Figma, Stitch, Google AI Studio, Canva |
+| **Frameworks** | React.js, Flutter, FastAPI, Node.js, LangChain, LangGraph |
+| **Cyber Security** | Computer Networks, Cryptography, Ethical Hacking, System Security, Digital Forensics |
 
 ---
 
 ## 💼 Professional Experience
 
-### **Data Analytics Intern** | *Tata GenAI Powered Platform (Virtual)*
-* Streamlined complex data cleaning and exploratory data analysis (EDA) processes by leveraging advanced Generative AI configurations.
-* Synthesized business trend datasets into clear, strategic dashboards utilized by corporate insight groups to inform decision-making.
+### **GenAI Powered Data Analytics Intern** | *Tata Consultancy Services (Virtual)*
+* Leveraged Generative AI architectures for complex data cleaning configurations and exploratory data analysis (EDA).
+* Synthesized business trend datasets to formulate strategic visual dashboards for corporate insight groups.
 
 ---
 
@@ -65,28 +64,37 @@ I am an undergraduate student pursuing Artificial Intelligence and Data Science 
 * Enterprise-grade autonomous onboarding platform that accelerates engineering integration by dynamically adapting learning paths and resources based on real-time technical proficiency and cognitive metrics.
 
 ### **[Email Spam Detection System](https://email-spam-detection-kxqfedblnguuabikvmhmtb.streamlit.app/)**
-* Engineered a highly accurate **(97%)** binary classification model using **TF-IDF vectorization** and **Logistic Regression**.
-* Built and deployed a live, real-time text prediction interface using **Streamlit**, allowing users to test emails instantly.
+* Engineered a 97% accuracy binary classification model using TF-IDF vectorization and Logistic Regression.
+* Built and deployed a live, real-time text prediction interface using Streamlit.
 
 ### **[Prashikshan NEP Platform](https://github.com/harshalnnpednekar/SIH-Prashikshan-NEP)**
-* Developed a multi-role data management platform designed for tracking metrics, automated logbook monitoring, and compliance analytics.
-* Architected a streamlined full-stack solution utilizing a **React and Node.js** stack, emphasizing responsive design and secure role-based access.
+* Developed a multi-role data management platform designed for tracking metrics, automated logbook monitoring, and compliance analytics using a streamlined React/Node stack.
 
 ---
 
-## 🏆 Achievements & Awards
+## 🏆 Achievements
 
-* 🥉 **3rd Position Nationally** — Zerve AI Datathon 2025 *(Hosted at Techfest, IIT Bombay)*  
-  *Recognized for rapid dataset analysis, high-frequency feature extraction, and building highly accurate predictive models under strict time constraints.*
-* 🏁 **1x National Hackathon Finalist** — PU Code Hackathon 3.0 *(National Level, Vadodara)*  
-  *Achieved a national-level finals appearance, demonstrating strong rapid prototyping, problem-solving, and team execution capabilities.*
+* **Junior Technical Officer** — ISTE VESIT *(Jul 2026)*  
+  *Responsible for managing technical events, conducting workshops, and contributing to the technical development of the tech community at ISTE VESIT.*
+* 🏁 **1x Hackathon Finalist** — PU Code Hackathon 3.0, Vadodara *(Jan 2026)*  
+  *Recognized for rapid prototyping and innovative problem-solving, securing a top finish at the national-level alongside team Bharat Bytes. Built a Telegram based Greivance chatbot for VMC within 36 hours.*
+* 🥉 **1x Datathon Winner** — Zerve AI Datathon, Techfest 2025, IIT Bombay *(Dec 2025)*  
+  *Secured 3rd Position nationally against elite talent alongside team Bharat Bytes. Showcased advanced data modeling and predictive analytics skills under high pressure.*
 
 ---
 
-## 📜 Certifications
+## 📜 Education Timeline
+
+* **B.Tech in Artificial Intelligence & Data Science**, VESIT Mumbai *(Aug 2024 — Present)* | **9.63 CGPA**
+* **Higher Secondary Certificate (HSC)**, B.N. Bandodkar College, Thane *(Jun 2022 — Apr 2024)* | **86.67%**
+* **Secondary School Certificate (SSC)**, A.K. Joshi English High School, Thane *(Jun 2012 — Apr 2022)* | **94.00%**
+
+---
+
+## 🎓 Certifications
 
 * **HackerRank:** 4 Star Badge in Python
-* **IBM:** AI Literacy, AI Fundamentals: Foundations for Understanding AI, AI Fundamentals: Language and Vision in AI
+* **IBM:** AI Literacy, AI Fundamentals: Foundations for Understanding AI, AI Fundamentals: Language and Vision in AI, Artificial Intelligence Fundamentals
 * **Udemy:** Data Science, Machine Learning, DL and NLP Bootcamp, Ethical Hacking and Penetration Testing
 * **Oracle:** Artificial Intelligence and Machine Learning in Java
 

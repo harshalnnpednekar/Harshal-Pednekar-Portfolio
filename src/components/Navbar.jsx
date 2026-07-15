@@ -100,10 +100,10 @@ export default function Navbar() {
 
             {/* Dropdown Options */}
             <div className={`absolute right-0 mt-3 w-32 rounded-xl bg-neutral-900 border border-neutral-800 shadow-2xl flex flex-col overflow-hidden transition-all duration-300 origin-top-right ${showResumeOptions ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
-              <a href="/Resume.pdf" target="_blank" onClick={() => setShowResumeOptions(false)} className="px-4 py-3 text-xs font-bold tracking-widest text-neutral-300 hover:bg-neutral-800 hover:text-white transition-colors text-center border-b border-neutral-800/50">
+              <a href="/Resume(1).pdf" target="_blank" onClick={() => setShowResumeOptions(false)} className="px-4 py-3 text-xs font-bold tracking-widest text-neutral-300 hover:bg-neutral-800 hover:text-white transition-colors text-center border-b border-neutral-800/50">
                 VIEW
               </a>
-              <a href="/Resume.pdf" download="Resume.pdf" onClick={() => setShowResumeOptions(false)} className="px-4 py-3 text-xs font-bold tracking-widest text-neutral-300 hover:bg-neutral-800 hover:text-white transition-colors text-center">
+              <a href="/Resume(1).pdf" download="resume(1).pdf" onClick={() => setShowResumeOptions(false)} className="px-4 py-3 text-xs font-bold tracking-widest text-neutral-300 hover:bg-neutral-800 hover:text-white transition-colors text-center">
                 DOWNLOAD
               </a>
             </div>
