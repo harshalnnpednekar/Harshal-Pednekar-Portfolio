@@ -1,3 +1,5 @@
+import { MapPin } from 'lucide-react';
+
 export default function Contact() {
   const currentYear = new Date().getFullYear();
   const emailUser = 'harsh.pednekar';
@@ -28,6 +30,12 @@ export default function Contact() {
             >
               CONTACT ME
             </a>
+          </div>
+
+          {/* Location Badge */}
+          <div className="flex items-center gap-2 mt-4 text-neutral-400 bg-white/5 px-5 py-2.5 rounded-full border border-white/10 shadow-lg cursor-default hover:bg-white/10 hover:border-white/20 transition-all duration-300">
+            <MapPin size={16} className="text-teal-400" />
+            <span className="text-xs md:text-sm font-bold tracking-widest uppercase">Based in Thane, Maharashtra</span>
           </div>
         </div>
 
