@@ -1,4 +1,4 @@
-import { Brain, Bot, Network, BarChart, LineChart, MessageSquare, BookOpen, Search, Eye, Server, Cpu, Layers, Code, Lock, Terminal, ShieldAlert, Link, Sparkles } from 'lucide-react';
+import { Brain, Bot, Network, BarChart, LineChart, MessageSquare, BookOpen, Search, Eye, Server, Cpu, Layers, Code, Lock, Terminal, ShieldAlert, Link, Sparkles, PieChart } from 'lucide-react';
 import { FaPython, FaJava, FaReact, FaHtml5, FaGitAlt, FaGithub, FaFigma, FaDatabase, FaCss3Alt, FaNodeJs, FaMicrosoft } from 'react-icons/fa';
 import { SiJavascript, SiDart, SiFlutter, SiPandas, SiNumpy, SiFastapi, SiScikitlearn, SiStreamlit, SiGooglecolab, SiPytorch } from 'react-icons/si';
 import Achievements from './Achievements';
@@ -9,22 +9,23 @@ export default function About() {
       category: "AI, ML & DATA SCIENCE",
       items: [
         { name: "Generative AI", icon: <Brain size={16} className="text-cyan-400" /> },
-        { name: "Machine Learning", icon: <Bot size={16} className="text-cyan-400" /> },
         { name: "AI Agents", icon: <Network size={16} className="text-teal-400" /> },
+        { name: "Machine Learning", icon: <Bot size={16} className="text-cyan-400" /> },
         { name: "Data Science", icon: <BarChart size={16} className="text-emerald-400" /> },
         { name: "Data Analytics", icon: <LineChart size={16} className="text-blue-400" /> },
-        { name: "Natural Language Processing (NLP)", icon: <MessageSquare size={16} className="text-teal-400" /> },
-        { name: "Large Language Models (LLMs)", icon: <BookOpen size={16} className="text-orange-400" /> },
-        { name: "Retrieval-Augmented Generation (RAG)", icon: <Search size={16} className="text-cyan-400" /> },
+        { name: "Natural Language Processing", icon: <MessageSquare size={16} className="text-teal-400" /> },
+        { name: "Large Language Models", icon: <BookOpen size={16} className="text-orange-400" /> },
+        { name: "Retrieval-Augmented Generation", icon: <Search size={16} className="text-cyan-400" /> },
         { name: "Deep Learning", icon: <Network size={16} className="text-emerald-400" /> },
-        { name: "Computer Vision", icon: <Eye size={16} className="text-teal-400" /> }
+        { name: "Computer Vision", icon: <Eye size={16} className="text-teal-400" /> },
+        { name: "Statistics", icon: <PieChart size={16} className="text-purple-400" /> }
       ],
     },
     {
       category: "LANGUAGES",
       items: [
         { name: "Python", icon: <FaPython size={16} className="text-blue-400" /> },
-        { name: "Java (OOP)", icon: <FaJava size={16} className="text-orange-400" /> },
+        { name: "Java", icon: <FaJava size={16} className="text-orange-400" /> },
         { name: "Dart", icon: <SiDart size={16} className="text-cyan-400" /> },
         { name: "SQL", icon: <FaDatabase size={16} className="text-teal-400" /> },
         { name: "HTML", icon: <FaHtml5 size={16} className="text-orange-500" /> },
@@ -133,7 +134,7 @@ export default function About() {
               <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/5 to-transparent group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none skew-x-12"></div>
 
               <div className="relative z-10 flex flex-col justify-start h-full gap-6">
-                <h3 className="text-xs font-bold tracking-widest text-teal-400 uppercase">Education & Academics</h3>
+                <h3 className="text-sm font-semibold tracking-widest text-teal-400 uppercase">Education & Academics</h3>
                 <div>
                   <h4 className="text-2xl md:text-3xl font-bold text-white mb-2">B.Tech in Artificial Intelligence & Data Science</h4>
                   <p className="text-lg text-neutral-400">Vivekanand Education Society's Institute of Technology (VESIT)</p>
@@ -178,7 +179,7 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
               <div className="relative z-10 h-full flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xs font-bold tracking-widest text-cyan-400 uppercase mb-6">Core Philosophy</h3>
+                  <h3 className="text-sm font-semibold tracking-widest text-cyan-400 uppercase mb-6">Core Philosophy</h3>
                   <h4 className="text-white font-bold text-base mb-3">Engineering Intelligence</h4>
                   <p className="text-sm text-neutral-400 leading-relaxed mb-6">
                     Transforming raw data into actionable insights and building scalable, user-centric applications. My focus lies at the intersection of applied machine learning, advanced LLM architectures, and robust full-stack development to solve real-world challenges.
@@ -205,7 +206,7 @@ export default function About() {
             <div className="md:col-span-1 group relative p-8 rounded-3xl border border-white/10 bg-white/10 backdrop-blur-md overflow-hidden hover:border-white/30 hover:-translate-y-2 transition-all duration-500 shadow-2xl cursor-default" style={{ animation: 'fadeInUp 0.8s ease-out 0.4s both' }}>
               <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
               <div className="relative z-10">
-                <h3 className="text-xs font-bold tracking-widest text-teal-400 uppercase mb-6">Technical Domains</h3>
+                <h3 className="text-sm font-semibold tracking-widest text-teal-400 uppercase mb-6">Technical Domains</h3>
                 <div className="flex flex-col gap-4">
                   {["Artificial Intelligence", "Machine Learning", "Data Science", "Data Analysis", "Cyber Security"].map((domain, i) => (
                     <div key={i} className="flex items-center gap-3">
@@ -222,7 +223,7 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
               <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/5 to-transparent group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none skew-x-12"></div>
               <div className="relative z-10 h-full flex flex-col justify-between">
-                <h3 className="text-xs font-bold tracking-widest text-cyan-400 uppercase mb-6">Architectural Specializations</h3>
+                <h3 className="text-sm font-semibold tracking-widest text-cyan-400 uppercase mb-6">Architectural Specializations</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {[
                     { title: "Predictive AI & ML", desc: "Building and optimizing machine learning pipelines, deep neural networks, and data models to drive data-informed decisions." },
@@ -238,14 +239,50 @@ export default function About() {
               </div>
             </div>
 
+            {/* Soft Skills Block */}
+            <div className="md:col-span-2 group relative p-8 rounded-3xl border border-white/10 bg-white/10 backdrop-blur-md overflow-hidden hover:border-white/30 hover:-translate-y-2 transition-all duration-500 shadow-2xl cursor-default" style={{ animation: 'fadeInUp 0.8s ease-out 0.6s both' }}>
+              <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/5 to-transparent group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none skew-x-12"></div>
+              <div className="relative z-10 h-full flex flex-col justify-between">
+                <h3 className="text-sm font-semibold tracking-widest text-cyan-400 uppercase mb-6">Soft Skills & Strengths</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {[
+                    { title: "Problem Solving", desc: "Approaching complex challenges with analytical and structured thinking." },
+                    { title: "Team Collaboration", desc: "Working effectively in cross-functional teams to deliver impactful solutions." },
+                    { title: "Adaptability", desc: "Quickly learning new technologies and adapting to dynamic project requirements." },
+                    { title: "Time Management", desc: "Prioritizing tasks and meeting deadlines efficiently without compromising quality." }
+                  ].map((skill, i) => (
+                    <div key={i} className="p-5 rounded-2xl bg-neutral-800/50 border border-white/10 hover:border-white/20 transition-colors">
+                      <h4 className="text-white font-bold text-base mb-2">{skill.title}</h4>
+                      <p className="text-xs text-neutral-400 leading-relaxed">{skill.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
 
+            {/* Interests Block */}
+            <div className="md:col-span-1 group relative p-8 rounded-3xl border border-white/10 bg-white/10 backdrop-blur-md overflow-hidden hover:border-white/30 hover:-translate-y-2 transition-all duration-500 shadow-2xl cursor-default" style={{ animation: 'fadeInUp 0.8s ease-out 0.7s both' }}>
+              <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+              <div className="relative z-10 h-full flex flex-col">
+                <h3 className="text-sm font-semibold tracking-widest text-teal-400 uppercase mb-6">Interests & Hobbies</h3>
+                <div className="flex flex-col justify-center gap-6 flex-1 pb-2">
+                  {["Hackathons and Ideathons", "Indian Politics", "Creative Writing", "Reading Tech Blogs", "Music & Cricket"].map((interest, i) => (
+                    <div key={i} className="flex items-center gap-3">
+                      <div className="w-1.5 h-1.5 rounded-full bg-gradient-accent flex-shrink-0"></div>
+                      <span className="text-sm font-medium text-neutral-300 group-hover:text-white transition-colors">{interest}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
 
           </div>
         </div>
 
         {/* Academic Journey Segment */}
         <div id="education" className="flex flex-col gap-10">
-          
+
           {/* Header */}
           <div className="flex flex-col gap-4 mb-4" style={{ animation: 'fadeInUp 0.8s ease-out 1.0s both' }}>
             <h2 className="font-sans text-5xl md:text-7xl font-black tracking-tighter text-primary uppercase drop-shadow-lg">
@@ -276,8 +313,8 @@ export default function About() {
                 timeline: "Jun 2012 — Apr 2022"
               }
             ].map((edu, idx) => (
-              <div 
-                key={idx} 
+              <div
+                key={idx}
                 className="group relative p-6 md:p-8 rounded-3xl border border-white/10 bg-white/10 backdrop-blur-md overflow-hidden hover:border-white/30 hover:-translate-y-2 transition-all duration-500 shadow-2xl flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-8"
                 style={{ animation: `fadeInUp 0.8s ease-out ${1.1 + idx * 0.15}s both` }}
               >
@@ -288,24 +325,24 @@ export default function About() {
                   </h3>
                   <p className="text-sm md:text-base text-neutral-400">{edu.institution}</p>
                 </div>
-                
+
                 {/* Mobile Wrapper (Disappears on Desktop via md:contents) */}
                 <div className="flex items-center justify-between w-full mt-2 md:mt-0 md:contents">
-                  
+
                   {/* Column 2: Score / Marks */}
                   <div className="flex-1 flex justify-start md:justify-center min-w-[120px]">
                     <span className="inline-flex items-center px-4 py-1.5 md:px-5 md:py-2 bg-white/5 border border-white/20 rounded-full text-xs md:text-sm font-medium text-neutral-300 whitespace-pre-line text-center leading-tight transition-all duration-300 hover:bg-white/10 hover:border-white/50 hover:text-white hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] cursor-default">
                       {edu.score}
                     </span>
                   </div>
-                  
+
                   {/* Column 3: Timeline */}
                   <div className="flex-1 flex justify-end min-w-[150px]">
                     <span className="inline-flex items-center px-4 py-1.5 md:px-5 md:py-2 bg-white/5 border border-white/20 rounded-full text-xs md:text-sm font-bold tracking-widest text-white uppercase whitespace-nowrap transition-all duration-300 hover:bg-white/10 hover:border-white/50 hover:text-white hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] cursor-default">
                       {edu.timeline}
                     </span>
                   </div>
-                  
+
                 </div>
               </div>
             ))}
@@ -334,7 +371,7 @@ export default function About() {
                     <span className="w-8 h-px bg-teal-500/50"></span>
                     {skillGroup.category}
                   </h3>
-                  <div className={`relative z-10 flex flex-wrap justify-center gap-3 ${skillGroup.category === "AI MODELS & ASSISTANTS" ? "max-w-[400px] mx-auto" : ""}`}>
+                  <div className={`relative z-10 flex flex-wrap justify-center gap-3 ${(skillGroup.category === "AI MODELS & ASSISTANTS" || skillGroup.category === "LANGUAGES") ? "max-w-[450px] mx-auto" : ""}`}>
                     {skillGroup.items.map((skill, i) => (
                       <div
                         key={i}
@@ -356,7 +393,7 @@ export default function About() {
 
         {/* Certifications Segment */}
         <div id="certifications" className="flex flex-col gap-10">
-          
+
           {/* Header */}
           <div className="flex flex-col gap-4 mb-4" style={{ animation: 'fadeInUp 0.8s ease-out 1.4s both' }}>
             <h2 className="font-sans text-5xl md:text-7xl font-black tracking-tighter text-primary uppercase drop-shadow-lg">
@@ -402,7 +439,7 @@ export default function About() {
               }
             ].map((group, groupIdx) => (
               <div key={groupIdx} className="group relative p-6 md:p-8 rounded-3xl border border-white/10 bg-white/10 backdrop-blur-md overflow-hidden hover:border-white/30 hover:-translate-y-2 transition-all duration-500 shadow-2xl flex flex-col md:flex-row gap-4 md:gap-8 items-start w-full" style={{ animation: `fadeInUp 0.8s ease-out ${1.5 + groupIdx * 0.15}s both` }}>
-                
+
                 {/* Background Glow on Hover */}
                 <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
 
@@ -413,12 +450,12 @@ export default function About() {
                     <span className={`md:hidden flex-1 h-px bg-current opacity-30`}></span>
                   </h3>
                 </div>
-                
+
                 {/* Group List (Right Content Grid) */}
                 <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
                   {group.certs.map((cert, idx) => (
-                    <div 
-                      key={idx} 
+                    <div
+                      key={idx}
                       className={`group relative p-5 border border-white/10 rounded-2xl bg-neutral-900/40 backdrop-blur-md shadow-xl hover:bg-white/[0.08] hover:border-white/20 transition-all duration-300 flex flex-col justify-center min-h-[90px] ${group.certs.length === 1 ? 'sm:col-span-2' : ''}`}
                     >
                       <h4 className="text-base font-medium text-neutral-300 group-hover:text-teal-400 transition-colors leading-snug text-center">
