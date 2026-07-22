@@ -267,7 +267,7 @@ export default function About() {
               <div className="relative z-10 h-full flex flex-col">
                 <h3 className="text-sm font-semibold tracking-widest text-teal-400 uppercase mb-6">Interests & Hobbies</h3>
                 <div className="flex flex-col justify-center gap-6 flex-1 pb-2">
-                  {["Hackathons and Ideathons", "Indian Politics", "Creative Writing", "Reading Tech Blogs", "Music & Cricket"].map((interest, i) => (
+                  {["Hackathons and Ideathons", "Current Affairs", "Creative Writing", "Reading Tech Blogs", "Music & Cricket"].map((interest, i) => (
                     <div key={i} className="flex items-center gap-3">
                       <div className="w-1.5 h-1.5 rounded-full bg-gradient-accent flex-shrink-0"></div>
                       <span className="text-sm font-medium text-neutral-300 group-hover:text-white transition-colors">{interest}</span>
