@@ -208,7 +208,7 @@ export default function About() {
               <div className="relative z-10">
                 <h3 className="text-sm font-semibold tracking-widest text-teal-400 uppercase mb-6">Technical Domains</h3>
                 <div className="flex flex-col gap-4">
-                  {["Artificial Intelligence", "Machine Learning", "Data Science", "Data Analysis", "Cyber Security"].map((domain, i) => (
+                  {["Artificial Intelligence", "Machine Learning", "Data Science", "Data Analytics", "Cyber Security"].map((domain, i) => (
                     <div key={i} className="flex items-center gap-3">
                       <div className="w-1.5 h-1.5 rounded-full bg-gradient-accent"></div>
                       <span className="text-sm font-medium text-neutral-300 group-hover:text-white transition-colors">{domain}</span>
